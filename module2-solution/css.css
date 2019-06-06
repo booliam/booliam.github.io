@@ -1,1 +1,62 @@
+/*Base Styles*/
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+
+h1 {
+	padding: 40px;
+	margin: 0px 0px 15px 0px;
+	font-size: 100px;
+	font-weight: bold;
+	background-color: #8A3033;
+	color: #BFB8AD;
+}
+
+section {
+	position: relative;
+	width: 100%;
+}
+
+p {
+	background-color: #823329;
+	color: #BFB8AD;
+	padding: 30px;
+	height: 175px;
+	font-size: 28px;
+	font-family: "Futura", sans-serif;
+	display: inline-grid;
+}
+
+/*Simple Framework*/
+.row {
+	width: 100%;
+}
+
+/*Large Devices*/
+@media (min-width: 992px) {
+	.col-lg-4 {
+		float: left;
+		width: 33.33%;
+	}
+}
+
+/*Medium Devices*/
+@media (min-width: 768px) and (max-width: 991px) {
+	.col-md-6 {
+		float: left;
+		width: 50%;
+	}
+	.col-md-12 {
+		float: left;
+		width: 100%;
+	}
+}
+
+
 
