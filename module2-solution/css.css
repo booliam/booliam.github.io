@@ -19,15 +19,24 @@ h1 {
 	color: #FFFFFF;
 }
 
-.section {
+section {
 	position: relative;
 	width: 100%;
+}
+
+article {
+	position: absolute;
+	background-color: #ffab99;
+	width: 5em;
+	height: 30px;
 }
 
 p {
 	background-color: #823329;
 	color: #BFB8AD;
+	border: 2px #000000;
 	padding: 30px;
+	margin: 10px;
 	height: 175px;
 	font-size: 28px;
 	font-family: "Futura", sans-serif;
@@ -45,6 +54,11 @@ p {
 		float: left;
 		width: 33.33%;
 	}
+	article {
+		font-size: 20px;
+		top: 10px;
+		left: 300px;	
+	}
 }
 
 /*Medium Devices*/
@@ -56,6 +70,16 @@ p {
 	.col-md-12 {
 		float: left;
 		width: 100%;
+	}
+	article {
+		font-size: 30px;
+		top: 10px;
+	}
+}
+/*Small Devices*/
+@media (max-width: 768px) {
+	article {
+		font-size: 15px;
 	}
 }
 
