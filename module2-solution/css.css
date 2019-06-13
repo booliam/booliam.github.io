@@ -20,13 +20,13 @@ h1 {
 
 #section1, #section2, #section3 {
 	position: relative;
-	overflow: hidden;
+	overflow: auto;
 	background-color: #999999;
 	border: solid #000;
 	border-width: 3px;
 	padding: 30px;
 	margin: 10px;
-	height: 175px;
+	height: 200px;
 }
 
 h2 {
@@ -39,14 +39,14 @@ h2 {
 	width: 7em;
 	height: 40px;
 	right: 0px;
-	top: -16px;
+	top: -17px;
 }
 
 #paragraph1, #paragraph2, #paragraph3 {
 	position: relative;
 	color: #000;
 	padding: 10px;
-	font-size: 15px;
+	font-size: 13px;
 	font-family: "Futura", sans-serif;
 	display: inline-grid;
 }
