@@ -7,25 +7,23 @@ body {
 	margin: 0px;
 	padding: 0px;
 	text-align: center;
+	font-family: "Marker Felt", fantasy;
 }
 
 h1 {
-	padding: 40px;
-	margin: 0px 0px 15px 0px;
 	font-size: 60px;
 	font-weight: bold;
-	font-family: "Arial", sans-serif;
 	color: #000;
 }
 
 #section1, #section2, #section3 {
 	position: relative;
-	overflow: auto;
+	overflow: hidden;
 	background-color: #999999;
 	border: solid #000;
 	border-width: 3px;
 	padding: 30px;
-	margin: 10px;
+	margin: 20px;
 	height: 200px;
 }
 
@@ -37,18 +35,17 @@ h2 {
 	font-size: 20px;
 	padding: 5px;
 	width: 7em;
-	height: 40px;
+	height: 32px;
 	right: 0px;
 	top: -17px;
 }
 
 #paragraph1, #paragraph2, #paragraph3 {
 	position: relative;
-	color: #000;
-	padding: 10px;
-	font-size: 13px;
-	font-family: "Futura", sans-serif;
 	display: inline-grid;
+	text-align: left;
+	color: #000;
+	font-size: 13px;
 }
 
 #chicken {
@@ -56,6 +53,7 @@ h2 {
 }
 #beef {
 	background-color: #C14543;
+	color: #FFF
 }
 #sushi {
 	background-color: #E5D198;
@@ -72,6 +70,12 @@ h2 {
 		float: left;
 		width: 33.33%;
 	}
+	#section1 {
+		margin-left: 40px;
+	}
+	#section3 {
+		margin-right: 40px;
+	}
 }
 /*Medium Devices*/
 @media (min-width: 768px) and (max-width: 991px) {
@@ -83,11 +87,23 @@ h2 {
 		float: left;
 		width: 100%;
 	}
+	#section1 {
+		margin-left: 40px;
+	}
+	#section2 {
+		margin-right: 40px;
+	}
+	#section3 {
+		margin: 20px 40px 20px 40px;
+	}
 }
 /*Small Devices*/
 @media (max-width: 768px) {
 	.col-sm-12 {
 		float: left;
 		width: 100%
+	}
+	#section1, #section2, #section3 {
+		margin: 10px 40px 10px 40px;
 	}
 }
