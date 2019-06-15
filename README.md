@@ -1,3 +1,4 @@
 # booliam.github.io
-[Ongoing Webpage for Client] (https://www.booliam.github.io/Sandra-Studio)
-[Completed Assignment for Course] (https://www.booliam.github.io/module2-solution)
+[Ongoing Webpage for Client] <a href='https://booliam.github.io/Sandra-Studio'>Sandra's Studio</a>
+
+[Completed Assignment for Course] <a href='https://www.booliam.github.io/module2-solution'>Module 2 Solution</a>
