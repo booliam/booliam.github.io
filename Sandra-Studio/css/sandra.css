@@ -6,7 +6,7 @@ body {
     font-size: 16px;
     font-family: "Montserrat", sans-serif;
     color: #FDECEF;
-    background-color: #F97777;
+    background-color: #544B6E;
     margin: 0;
     padding: 0;
 }
@@ -14,7 +14,7 @@ body {
 #header-nav {
     position: relative;
     width: 100%;
-    background-color: #50CCC0;
+    background-color: #3985BA;
     border-radius: 0;
     border: 0;
 }
