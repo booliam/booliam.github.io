@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    color: #FDECEF;
+    background-color: #F97777;
+    margin: 0;
+    padding: 0;
+}
+
+#header-nav {
+    position: relative;
+    width: 100%;
+    background-color: #50CCC0;
+    border-radius: 0;
+    border: 0;
+}
+
+#logo {
+    position: absolute;
+    background: url('../images/piano.png') no-repeat;
+    width: 200px;
+    height: 200px;
+}
+
+.navbar-brand {
+    padding-top: 25px;
+}
+.navbar-brand h1 {
+    position: absolute;
+    text-transform: uppercase;
+    font-family: bebas-neue, sans-serif;
+    line-height: .75;
+}
+.navbar-brand h2 {
+    position: absolute;
+    text-transform: uppercase;
+    margin-top: 15px;
+    font-weight: 600;
+}
+.navbar-brand a:hover,.navbar-brand a:focus {
+    color: #000;
+    text-decoration: none;
+}
+
+#header1 {
+    color: #000;
+}
+
+/*Responsive Framework*/
+
+/*Extra Large Devices*/
+@media (min-width: 1200px) {
+    nav {
+        height: 200px;
+    }
+
+    #logo {
+        top: 0;
+        left: 10px;
+    }
+
+    .navbar-brand h1 {
+        top: 0;
+        left: 210px;
+        margin: 20px 10px 10px 10px;
+        font-size: 3em;
+    }
+
+    .navbar-brand h2 {
+        top: 60px;
+        left: 225px;
+        font-size: 1.5em;
+    }
+}
+
+/*Large Devices*/
+@media (min-width: 992px) and (max-width: 1199px) {
+    nav {
+        height: 180px;
+    }
+
+    #logo {
+        top: -5px;
+        left: 10px;
+    }
+
+    .navbar-brand h1 {
+        top: 0;
+        left: 210px;
+        margin: 20px 10px 20px 10px;
+        font-size: 2.5em;
+    }
+
+    .navbar-brand h2 {
+        top: 50px;
+        left: 225px;
+        font-size: 1.25em;
+    }
+}
+
+/*Medium Devices*/
+@media (min-width: 768px) and (max-width: 991px) {
+    nav {
+        height: 120px;
+    }
+
+    .navbar-brand h1 {
+        top: 0;
+        left: 20px;
+        margin: 20px 10px 10px 10px;
+        font-size: 2.5em;
+    }
+
+    .navbar-brand h2 {
+        top: 50px;
+        left: 40px;
+        font-size: 1.25em;
+    }
+}
+
+/*Small Devices*/
+@media (min-width: 576px) and (max-width: 767px) {
+    nav {
+        height: 120px;
+    }
+
+    .navbar-brand h1 {
+        top: 0;
+        left: 20px;
+        margin: 20px 10px 10px 10px;
+        font-size: 2.5em;
+    }
+
+    .navbar-brand h2 {
+        top: 50px;
+        left: 40px;
+        font-size: 1.25em;
+    }
+}
+
+/*Extra Small Devices*/
+@media (max-width: 575px) {
+    nav {
+        height: 90px;
+    }
+
+    .navbar-brand h1 {
+        top: 0;
+        left: 20px;
+        margin: 20px 10px 10px 10px;
+        font-size: 2em;
+    }
+
+    .navbar-brand h2 {
+        top: 40px;
+        left: 40px;
+        font-size: 1em;
+    }
+}

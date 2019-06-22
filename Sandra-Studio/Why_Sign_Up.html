@@ -2,30 +2,38 @@
 <html lang='en'>
     <head>
         <meta charset='utf-8'>
-        <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <title>Sandra's Studio</title>
         <link rel='stylesheet' href='css/bootstrap.min.css'>
-        <link rel='stylesheet' href='sandra.css'>
+        <link rel='stylesheet' href='css/sandra.css'>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.typekit.net/hnb2arl.css">
     </head>
 
     <body>
-        <div class='container-fluid'> 
-            <div class='row'>
-                <header></header>
-                    <h1>Sandra's Studio</h1>
-                        <h2>Cumming, GA</h2>
-                        <img src="piano.png" alt='Piano Icon'>
-                <div class='col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12'>
-                    <a href='index.html' type='button' class='btn btn-dark active' pressed='true' id='tab1'>Why Sign Up?</a>
-                </div>
+        <!--HTML-->
 
-                <div class='col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12'>
-                    <a href='About_Me.html' type='button' class='btn btn-outline-dark' id='tab2'>About Me</a>
-                </div>
+             <!--NavBar-->
+             <header>
+                <nav id='header-nav' class='navbar navbar-default'>
+                    <div class='container'>  
+                        <div class='navbar-header'> 
+                            <a href="index.html" class='pull-left'>
+                                <div class='d-none d-sm-none d-md-none d-lg-block d-xl-block' id='logo' alt='piano logo'></div>
+                            </a>
+                        <div class='navbar-brand'>
+                            <a href='index.html' class='pull-left' id='header1'><h1>Sandra's Studio</h1></a>
+                                    <h2 id='header2'>Cumming, GA</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </header>
 
-                <div class='col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12'>
-                    <a href='Contact_Info.html' type='button' class='btn btn-outline-dark' id='tab3'>Contact Info</a>
-                </div>
-            </div>
-        </div>
+
+        <!--jQuery-->
+        <script src='js/jquery-2.1.4.min.js'></script>
+        <script src='js/bootstrap.min.js'></script>
+        <script src='js/script.js'></script>
     </body>
 </html>
