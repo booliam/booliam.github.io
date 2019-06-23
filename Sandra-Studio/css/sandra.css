@@ -6,13 +6,11 @@ body {
     font-size: 16px;
     font-family: "Montserrat", sans-serif;
     color: #FDECEF;
-    background-color: #C0BDCA;
-    margin: 0;
-    padding: 0;
+    background-color: #A7D8DC;
 }
 
+/*Navbar*/
 #header-nav {
-    position: relative;
     width: 100%;
     background-color: #3985BA;
     border-radius: 0;
@@ -20,7 +18,6 @@ body {
 }
 
 #logo {
-    position: absolute;
     background: url('../images/piano.png') no-repeat;
     width: 200px;
     height: 200px;
@@ -28,136 +25,223 @@ body {
 
 .navbar-brand {
     padding-top: 25px;
+    text-align: center;
 }
 .navbar-brand h1 {
-    position: absolute;
     text-transform: uppercase;
     font-family: bebas-neue, sans-serif;
+    text-shadow: 1px 1px 1px #222;
     line-height: .75;
 }
-.navbar-brand h2 {
-    position: absolute;
+.navbar-brand p {
     text-transform: uppercase;
+    color: #A7D8DC;
     margin-top: 15px;
     font-weight: 600;
 }
 .navbar-brand a:hover,.navbar-brand a:focus {
-    color: #000;
+    color: #04292C;
     text-decoration: none;
 }
 
 #header1 {
-    color: #000;
+    color: #04292C;
+    display: block;
+}
+
+/*Jumbotron*/
+.container .jumbotron {
+    box-shadow: 0 0 50px #635B7B;
+    border: 2px solid #635B7B;
+    width: auto;
+    padding: 0;
+    margin: 0;
+}
+
+/*Tiles*/
+#sign-tile, #about-tile, #map-tile {
+    height: 250px;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 2px solid #635B7B;
+    position: relative;
+    overflow: hidden;
+}
+
+#sign-tile:hover, #about-tile:hover, #map-tile:hover {
+    box-shadow: 0 1px 5px 1px #FFF;
+}
+
+#sign-tile {
+    background: url('https://via.placeholder.com/350x250.jpg') no-repeat;
+    background-position: center;
+}
+
+#about-tile {
+    background: url('https://via.placeholder.com/350x250.jpg') no-repeat;
+    background-position: center;
+}
+
+#sign-tile span, #about-tile span, #map-tile span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.6em;
+    background-color: #76303F;
+    color: #FFF;
+    opacity: .8;
 }
 
 /*Responsive Framework*/
 
 /*Extra Large Devices*/
 @media (min-width: 1200px) {
-    nav {
-        height: 200px;
-    }
-
-    #logo {
-        top: 0;
-        left: 10px;
-    }
 
     .navbar-brand h1 {
-        top: 0;
-        left: 210px;
-        margin: 20px 10px 10px 10px;
-        font-size: 3em;
+        margin-left: 20px;
+        font-size: 4em;
     }
 
-    .navbar-brand h2 {
-        top: 60px;
-        left: 225px;
-        font-size: 1.5em;
+    .navbar-brand p {
+        font-size: 2em;
+    }
+
+    .navbar-header {
+        padding: 15px;
+    }
+
+    .container .jumbotron {
+        background: url('https://via.placeholder.com/1110x560.jpg') no-repeat;
+        height: 560px;
+        margin-top: 40px;
+    }
+
+    #sign-tile, #about-tile, #map-tile {
+        margin-bottom: 20px;
     }
 }
 
 /*Large Devices*/
-@media (min-width: 992px) and (max-width: 1199px) {
-    nav {
-        height: 180px;
-    }
+@media (min-width: 992px) and (max-width: 1199.98px) {
 
     #logo {
-        top: -5px;
-        left: 10px;
+        background: url('../images/piano-medium.png') no-repeat;
+        width: 150px;
+        height: 150px;
     }
 
     .navbar-brand h1 {
-        top: 0;
-        left: 210px;
-        margin: 20px 10px 20px 10px;
-        font-size: 2.5em;
+        margin-left: 15px;
+        font-size: 3.5em;
     }
 
-    .navbar-brand h2 {
-        top: 50px;
-        left: 225px;
-        font-size: 1.25em;
+    .navbar-brand p {
+        font-size: 1.75em;
+    }
+
+    .navbar-header {
+        padding: 15px;
+    }
+
+    .container .jumbotron {
+        background: url('https://via.placeholder.com/930x500.jpg') no-repeat;
+        height: 500px;
+        margin-top: 40px;
+    }
+
+    #sign-tile, #about-tile, #map-tile {
+        margin-bottom: 15px;
     }
 }
 
 /*Medium Devices*/
-@media (min-width: 768px) and (max-width: 991px) {
-    nav {
-        height: 120px;
-    }
+@media (min-width: 768px) and (max-width: 991.98px) {
 
     .navbar-brand h1 {
-        top: 0;
-        left: 20px;
-        margin: 20px 10px 10px 10px;
-        font-size: 2.5em;
+        margin: 0;
+        font-size: 3.5em;
     }
 
-    .navbar-brand h2 {
-        top: 50px;
-        left: 40px;
-        font-size: 1.25em;
+    .navbar-brand p {
+        font-size: 1.75em;
+    }
+
+    .navbar-header {
+        padding: 15px;
+    }
+
+    .container .jumbotron {
+        background: url('https://via.placeholder.com/690x350.jpg') no-repeat;
+        height: 350px;
+        margin-top: 40px;
+    }
+
+    #sign-tile, #about-tile, #map-tile {
+        margin-bottom: 10px;
     }
 }
 
 /*Small Devices*/
-@media (min-width: 576px) and (max-width: 767px) {
-    nav {
-        height: 120px;
-    }
+@media (min-width: 576px) and (max-width: 767.98px) {
 
     .navbar-brand h1 {
-        top: 0;
-        left: 20px;
-        margin: 20px 10px 10px 10px;
-        font-size: 2.5em;
+        margin: 0;
+        font-size: 3em;
     }
 
-    .navbar-brand h2 {
-        top: 50px;
-        left: 40px;
-        font-size: 1.25em;
+    .navbar-brand p {
+        font-size: 1.5em;
+    }
+
+    .navbar-header {
+        padding: 10px;
+    }
+
+    .container .jumbotron {
+        background: url('https://via.placeholder.com/510x320.jpg') no-repeat;
+        height: 320px;
+        margin-top: 40px;
+    }
+
+    #sign-tile, #about-tile, #map-tile {
+        margin-bottom: 10px;
     }
 }
 
 /*Extra Small Devices*/
-@media (max-width: 575px) {
-    nav {
-        height: 90px;
-    }
+@media (max-width: 575.98px) {
 
     .navbar-brand h1 {
-        top: 0;
-        left: 20px;
-        margin: 20px 10px 10px 10px;
-        font-size: 2em;
+        font-size: 10vw;
     }
 
-    .navbar-brand h2 {
-        top: 40px;
-        left: 40px;
-        font-size: 1em;
+    .navbar-brand p {
+        font-size: 4vw;
+    }
+
+    .container .jumbotron {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    #sign-tile, #about-tile, #map-tile {
+        margin-bottom: 2px;
+        width: 350px;
+    }
+}
+
+/*Extremely Small Devices*/
+@media (max-width: 479px) {
+    .navbar-brand a {
+        font-size: 1.2em;
+    }
+
+    #sign-tile, #about-tile, #map-tile {
+        width: 280px;
+        margin: 0 auto 15px;
     }
 }
