@@ -228,7 +228,7 @@ body {
         margin-bottom: 15px;
     }
 
-    #sign-tile, #about-tile, #map-tile {
+    #sign-tile, #about-tile {
         margin-bottom: 2px;
         width: 350px;
     }
@@ -240,7 +240,7 @@ body {
         font-size: 1.2em;
     }
 
-    #sign-tile, #about-tile, #map-tile {
+    #sign-tile, #about-tile {
         width: 280px;
         margin: 0 auto 15px;
     }
