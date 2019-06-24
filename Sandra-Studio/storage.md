@@ -1,40 +1,37 @@
-            <!--Sidebar-->
-            <div class='wrapper'>
-                <nav id='sidebar'>
-                    <div class='sidebar-header'>
-                        <h3>Menu</h3>
-                     </div>
+                        <!--Menu Button-->
+                        <button class='navbar-toggler toggler-example' type='button' data-toggle='collapse' data-target='navbarSupportedContent1' aria-controls='navbarSupportedContent1' aria-expanded='false' aria-label='Toggle Navigation'><span class='dark-blue-text'><i class='fas fa-bars fa-1x'></i></span></button>
+                        <!--Collapsible Content-->
+                        <div class='collapse navbar-collapse' id='navbarSupportedContent1'>
 
-                    <ul list-unstyled components>
-                        <p>Dummy Heading</p>
-                        <li class='active'>
-                            <a href='index.html' data-toggle='collapse' aria-expanded='false' class='dropdown-toggle'>Lorem Ipsum</a>
-                            <ul class='collapse list-unstyled' id='homeSubmenu'>
-                                <li>
-                                    <a href='Why_Sign_Up.html'>Why Sign Up?</a>
+                            <!--Links-->
+                            <ul class='navbar-nav mr-auto'>
+                                <li class='nav-item active'>
+                                    <!--Dropdown Menu 1-->
+                                    <div class='dropdown'>
+                                        <a class='btn btn-secondary dropdown-toggle' href='#' role='button' id='dropdownMenuLink1' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+                                            Looking for Lessons
+                                        </a>
+
+                                        <div class='dropdown-menu' aria-labelledby='dropdownMenuLink1'>
+                                            <a class='dropdown-item' href='#'>Action</a>
+                                            <a class='dropdown-item' href='#'>Another Action</a>
+                                            <a class='dropdown-item' href='#'>Something else here</a>
+                                        </div>
+                                    </div>
                                 </li>
-                                <li>
-                                    <a href='About_Me.html'>About Me</a>
-                                </li>
-                                <li>
-                                    <a href='Contact_Info.html'>Contact Info</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-
-                <!--Page Content-->
-                <div id='content'>
-
-                    <nav class='navbar navbar-expand-lg navbar-light bg-light'>
-                        <div class='container-fluid'>
-
-                            <button type='button' id='sidebarCollapse' class='btn btn-info'>
-                                <i class='fas fa-align-right'></i>
-                                <span>Menu</span>
-                            </button>
-                        </div>
-                    </nav>
-                </div>
-            </div>
+                                <!--Dropdown Menu 2-->
+                                <li class='nav-item'>
+                                    <div class='dropdown'>
+                                            <a class='btn btn-secondary dropdown-toggle' href='#' role='button' id='dropdownMenuLink2' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+                                                Already a Student
+                                            </a>
+        
+                                            <div class='dropdown-menu' aria-labelledby='dropdownMenuLink2'>
+                                                <a class='dropdown-item' href='#'>Action</a>
+                                                <a class='dropdown-item' href='#'>Another Action</a>
+                                                <a class='dropdown-item' href='#'>Something else here</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>

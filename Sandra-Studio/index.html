@@ -15,21 +15,40 @@
 
              <!--NavBar-->
              <header>
-                <nav id='header-nav' class='navbar navbar-default'>
-                    <div class='container'>  
+                <nav id='header-nav' class='navbar navbar-expand-lg navbar-dark'>
+                    <div class='container mx-auto'>  
                         <div class='navbar-header'> 
-                            <a href="index.html" class='float-left'>
-                                <div class='d-none d-sm-none d-md-none d-lg-block d-xl-block' id='logo' alt='piano logo'></div>
+                            <a href="index.html">
+                                <div class='d-none d-lg-block' id='logo' alt='piano logo'></div>
                             </a>
                         <div class='navbar-brand'>
-                            <h1><a href='index.html' class='float-left' id='header1'>Sandra's Studio</a></h1>
-                                        <p id='header2'>Cumming, GA</p>
+                            <h1 ><a href='index.html' class='' id='header1'>Sandra's Studio</a></h1>
+                                    <h2 id='header2'>Cumming, GA</h2>
+                                        <!--Menu Button-->
+                                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                            <span class="navbar-toggler-icon"></span>
+                                        </button>
+                                        <div class='collapse navbar-collapse' id='navbarSupportedContent'>
+                                            <ul id='nav-list' class='navbar-nav mr-auto'>
+                                                <!--Button 1-->
+                                                <li class='nav-item active float-none'>
+                                                    <a class='nav-link' id='home' href='index.html'>Home</a>
+                                                </li>
+                                                <!--Button 2-->
+                                                <li class='nav-item active float-none'>
+                                                    <a class='nav-link' id='lessons' href='new-students.html'>Looking for Lessons</a>
+                                                </li>
+                                                <!--Button 3-->
+                                                <li class='nav-item active float-none'>
+                                                    <a class='nav-link' id='existing' href='existing-students.html'>Already a Student</a>
+                                                </li>
+                                            </ul>
+                                        </div>          
+                                    </div>
                                 </div>
-
-                        </div>
-                    </div>
-                </nav>
-            </header>
+                            </div>
+                         </nav>
+                    </header>
 
             <!--Main Content-->
             <div id='main-content' class='container'>
@@ -38,26 +57,45 @@
                 </div>
 
                 <div id='media-tiles' class='row'>
-                    <div class='col-md-4 col-sm-6 col-xs-12'>
-                        <a href='sign-up.html'><div id='sign-tile' class='mx-auto'><span>why sign up?</span></div></a>
+                    <div class='col-md-6 col-sm-6 col-xs-12'>
+                        <a href='new-students.html'><div id='new-tile' class='mx-auto'><span>Looking for Piano Lessons</span></div></a>
                     </div>
 
-                    <div class='col-md-4 col-sm-6 col-xs-12'>
-                        <a href='about.html'><div id='about-tile' class='mx-auto'><span>about</span></div></a>
+                    <div class='col-md-6 col-sm-6 col-xs-12'>
+                        <a href='existing-students.html'><div id='existing-tile' class='mx-auto'><span>Already a Student</span></div></a>
                     </div>
+                </div><!--End of Tiles-->
+            </div><!--End of Homepage-->
 
-                    <div class='col-md-4 col-sm-12 col-xs-12'>
-                        <a href='https://goo.gl/maps/TwtWP7CA8xdmd7dU9' target='_blank'><div id='map-tile' class='mx-auto'>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26398.09309489287!2d-84.148139074811!3d34.20356619932695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f58523717bebd7%3A0x1f85f06242e1c19d!2sCumming%2C+GA!5e0!3m2!1sen!2sus!4v1561306557225!5m2!1sen!2sus" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
-                            <span>map</span>
-                        </div></a>
+             <!--Footer-->
+            <footer class='panel-footer'>
+                <div class='container'>
+                    <div class='row'>
+                        <section id='schedule' class='col-sm-4'>
+                            <span>Schedule:</span><br>
+                            lorem ipsum<br>
+                            lorem ipsum<br>
+                            lorem ipsum<br>
+                            <hr class='d-block d-sm-none d-md-none d-lg-none d-xl-none'>
+                        </section>
+                        <section id='address' class='col-sm-4'>
+                            <span>Address:</span><br>
+                            lorem ipsum<br>
+                            <hr class='d-block d-sm-none d-md-none d-lg-none d-xl-none'>
+                        </section>
+                        <section id='testimonials' class='col-sm-4'>
+                            <span>Testimonials:</span><br>
+                            <p>"lorem ipsum"</p>
+                            <p>"lorem ipsum</p>
+                            <p>"lorem ipsum"</p>
+                        </section> 
                     </div>
                 </div>
-            </div>
+            </footer>
 
         <!--jQuery-->
-        <script src='js/jquery-2.1.4.min.js'></script>
-        <script src='js/bootstrap.min.js'></script>
-        <script src='js/script.js'></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </body>
 </html>

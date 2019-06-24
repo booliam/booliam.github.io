@@ -15,30 +15,43 @@ body {
     background-color: #3985BA;
     border-radius: 0;
     border: 0;
+    padding-bottom: 0;
+}
+
+div.navbar-header {
+    padding-bottom: 0;
 }
 
 #logo {
     background: url('../images/piano.png') no-repeat;
     width: 200px;
     height: 200px;
+    float: left;
 }
 
 .navbar-brand {
-    padding-top: 25px;
+    margin: 0;
+    padding-top: 15px;
+    height: auto;
+    width: auto;
     text-align: center;
 }
-.navbar-brand h1 {
+.navbar-brand #header1 {
     text-transform: uppercase;
     font-family: bebas-neue, sans-serif;
+    float: left;
     text-shadow: 1px 1px 1px #222;
     line-height: .75;
+    margin: 0;
 }
-.navbar-brand p {
+.navbar-brand #header2 {
     text-transform: uppercase;
-    color: #A7D8DC;
-    margin-top: 15px;
+    float: left;
+    color: #DEACB7;
+    margin: 0;
     font-weight: 600;
 }
+
 .navbar-brand a:hover,.navbar-brand a:focus {
     color: #04292C;
     text-decoration: none;
@@ -49,41 +62,65 @@ body {
     display: block;
 }
 
+/*Menu Buttons*/
+.navbar-toggler-icon {
+    color: #FFF
+}
+
+#nav-list {
+    margin-top: 10px;
+}
+
+#nav-list a {
+    color: #F2F3F4;
+    text-align: center;
+    border-radius: 8px;
+}
+
+#nav-list a:hover {
+    background-color: #FF9585;
+}
+
 /*Jumbotron*/
 .container .jumbotron {
     box-shadow: 0 0 50px #635B7B;
     border: 2px solid #635B7B;
     width: auto;
+    overflow: hidden;
+    border-radius: 8px;
     padding: 0;
     margin: 0;
 }
 
 /*Tiles*/
-#sign-tile, #about-tile, #map-tile {
+#new-tile, #existing-tile {
     height: 250px;
     width: 100%;
     margin-top: 15px;
     margin-bottom: 15px;
+    border-radius: 8px;
     border: 2px solid #635B7B;
     position: relative;
     overflow: hidden;
 }
 
-#sign-tile:hover, #about-tile:hover, #map-tile:hover {
-    box-shadow: 0 1px 5px 1px #FFF;
+#new-tile:hover, #existing-tile:hover {
+    box-shadow: 0 1px 15px 8px #EFEEF1;
 }
 
-#sign-tile {
-    background: url('https://via.placeholder.com/350x250.jpg') no-repeat;
+#new-tile {
+    background: url('https://via.placeholder.com/540x200.jpg') no-repeat;
     background-position: center;
+    height: 200px;
 }
 
-#about-tile {
-    background: url('https://via.placeholder.com/350x250.jpg') no-repeat;
+#existing-tile {
+    background: url('https://via.placeholder.com/540x200.jpg') no-repeat;
     background-position: center;
+    height: 200px;
 }
 
-#sign-tile span, #about-tile span, #map-tile span {
+#new-tile span, #existing-tile span {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -91,37 +128,53 @@ body {
     text-align: center;
     text-transform: uppercase;
     font-size: 1.6em;
-    background-color: #76303F;
+    background-color: #204966;
     color: #FFF;
     opacity: .8;
 }
-
+/*Footer*/
+.panel-footer {
+    margin-top: 25px;
+    margin-bottom: 0;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    background-color: #383838;
+    border-radius: 8px 8px 0 0;
+    border-top: 0;
+}
 /*Responsive Framework*/
 
 /*Extra Large Devices*/
 @media (min-width: 1200px) {
 
-    .navbar-brand h1 {
-        margin-left: 20px;
-        font-size: 4em;
-    }
-
-    .navbar-brand p {
+    .navbar-brand #header1 {
+        margin: 0 30px 0 20px;
         font-size: 2em;
     }
 
-    .navbar-header {
-        padding: 15px;
+    .navbar-brand #header2 {
+        margin: 15px 0 0 30px;
+        font-size: 1.5em;
+    }
+
+    .navbar-brand .nav-link {
+        margin: 15px 0 0 0;
+        font-size: .85em;
     }
 
     .container .jumbotron {
-        background: url('https://via.placeholder.com/1110x560.jpg') no-repeat;
-        height: 560px;
+        background: url('https://via.placeholder.com/1110x500.jpg') no-repeat;
+        height: 500px;
         margin-top: 40px;
     }
 
-    #sign-tile, #about-tile, #map-tile {
+    #new-tile, #existing-tile {
         margin-bottom: 20px;
+    }
+
+    #new-tile span, #existing-tile span {
+        font-size: 1.6em;
+        padding: 5px 0;
     }
 }
 
@@ -134,44 +187,51 @@ body {
         height: 150px;
     }
 
-    .navbar-brand h1 {
-        margin-left: 15px;
-        font-size: 3.5em;
-    }
-
-    .navbar-brand p {
+    .navbar-brand #header1 {
+        margin: 0 20px 0 0;
         font-size: 1.75em;
     }
 
-    .navbar-header {
-        padding: 15px;
+    .navbar-brand #header2 {
+        margin: 10px 0 0 10px;
+        font-size: 1.25em;
+    }
+
+    .navbar-brand .nav-link {
+        font-size: .75em;
     }
 
     .container .jumbotron {
-        background: url('https://via.placeholder.com/930x500.jpg') no-repeat;
-        height: 500px;
+        background: url('https://via.placeholder.com/930x400.jpg') no-repeat;
+        height: 400px;
         margin-top: 40px;
     }
 
-    #sign-tile, #about-tile, #map-tile {
+    #new-tile, #existing-tile {
         margin-bottom: 15px;
+    }
+
+    #new-tile span, #existing-tile span {
+        font-size: 1.4em;
+        padding: 8px 0;
     }
 }
 
 /*Medium Devices*/
 @media (min-width: 768px) and (max-width: 991.98px) {
 
-    .navbar-brand h1 {
-        margin: 0;
-        font-size: 3.5em;
+    .navbar-brand {
+        width: 100%;
     }
 
-    .navbar-brand p {
-        font-size: 1.75em;
+    .navbar-brand #header1 {
+        margin: 0 160px 10px 45px;
+        font-size: 1.5em;
     }
 
-    .navbar-header {
-        padding: 15px;
+    .navbar-brand #header2 {
+        margin: 0 0 0 55px;
+        font-size: 1em;
     }
 
     .container .jumbotron {
@@ -180,25 +240,27 @@ body {
         margin-top: 40px;
     }
 
-    #sign-tile, #about-tile, #map-tile {
+    #new-tile, #existing-tile {
         margin-bottom: 10px;
+    }
+
+    #new-tile span, #existing-tile span {
+        font-size: 1.1em;
+        padding: 10px 0;
     }
 }
 
 /*Small Devices*/
 @media (min-width: 576px) and (max-width: 767.98px) {
 
-    .navbar-brand h1 {
-        margin: 0;
-        font-size: 3em;
-    }
-
-    .navbar-brand p {
+    .navbar-brand #header1 {
+        margin: 0 40px 10px 20px;
         font-size: 1.5em;
     }
 
-    .navbar-header {
-        padding: 10px;
+    .navbar-brand #header2 {
+        margin: 0 0 0 30px;
+        font-size: 1em;
     }
 
     .container .jumbotron {
@@ -207,20 +269,27 @@ body {
         margin-top: 40px;
     }
 
-    #sign-tile, #about-tile, #map-tile {
+    #new-tile, #existing-tile {
         margin-bottom: 10px;
+    }
+
+    #new-tile span, #existing-tile span {
+        font-size: .85em;
+        padding: 10px 0;
     }
 }
 
 /*Extra Small Devices*/
 @media (max-width: 575.98px) {
 
-    .navbar-brand h1 {
+    .navbar-brand #header1 {
+        margin: 0 18vw 2vw 0;
         font-size: 10vw;
     }
 
-    .navbar-brand p {
-        font-size: 4vw;
+    .navbar-brand #header2 {
+        margin: 0 0 0 5vw;
+        font-size: 3.5vw;
     }
 
     .container .jumbotron {
@@ -228,20 +297,34 @@ body {
         margin-bottom: 15px;
     }
 
-    #sign-tile, #about-tile {
+    #new-tile, #existing-tile {
         margin-bottom: 2px;
         width: 350px;
+    }
+
+    #new-tile span, #existing-tile span {
+        font-size: 1.3em;
+        padding: 8px 0;
     }
 }
 
 /*Extremely Small Devices*/
-@media (max-width: 479px) {
-    .navbar-brand a {
-        font-size: 1.2em;
+@media (max-width: 400px) {
+    .navbar-brand #header1 {
+        font-size: 8vw
     }
 
-    #sign-tile, #about-tile {
+    .navbar-brand a {
+        font-size: 5vw;
+    }
+
+    #new-tile, #existing-tile {
         width: 280px;
         margin: 0 auto 15px;
+    }
+
+    #new-tile span, #existing-tile span {
+        font-size: .75em;
+        padding: 8px 0;
     }
 }
