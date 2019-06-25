@@ -5,32 +5,33 @@
         <meta name='viewport' content='width=device-width, initial-scale=1.0'>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel='stylesheet' href='css.css'>
+        <title>Module 3 Solution | Liam Brake</title>
     </head>
     <body>
         <!--Navbar-->
         <header>  
-            <nav id='header-nav' class='navbar navbar-expand-lg navbar-light bg-light d-print'>
+            <nav id='header-nav' class='navbar navbar-expand-lg navbar-dark bg-dark d-print'>
                     <div class='navbar-brand'>
                         <h1>Food, LLC</h1>
                         <!--Menu Button-->
-                        <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>
+                        <button class='navbar-toggler d-block d-md-none' type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>
                             <span class='navbar-toggler-icon'></span>
                         </button>
                         
                         <!--Buttons-->
                         <div class='collapse navbar-collapse' id='navbarSupportedContent'>
-                            <ul class='navbar-nav mr-auto mt-2 mt-lg-0 d-block d-lg-none'>
+                            <ul class='navbar-nav mr-auto mt-2 mt-lg-0 d-block d-md-none'>
                                 <!--Chicken Button-->
                                 <li class='nav-item'>
-                                    <a class='nav-link' id='chicken' href='#'>Chicken</a>
+                                    <a class='nav-link' id='chickenButton' href='#chicken'>Chicken</a>
                                 </li>
                                 <!--Beef Button-->
                                 <li class='nav-item'>
-                                    <a class='nav-link' id='beef' href='#'>Beef</a>
+                                    <a class='nav-link' id='beefButton' href='#beef'>Beef</a>
                                 </li>
                                 <!--Sushi Button-->
                                 <li class='nav-item'>
-                                    <a class='nav-link' id='beef' href='#'>Sushi</a>
+                                    <a class='nav-link' id='sushiButton' href='#sushi'>Sushi</a>
                                 </li>
                             </ul>
                         </div>
@@ -38,6 +39,34 @@
                 </div>
             </nav>
         </header>
+
+        <!--Main Content-->
+        <div class='container-fluid'>
+            <div id='menuTitle' class='text-center'>Our Menu</div>
+                <div class='row'>
+
+                <!--Chicken Section-->
+                <div id='chicken' class='bg-dark col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4'>
+                    <h3 id='chickenHeading' class='text-center mx-auto'>Chicken</h3>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                    <a id='chickenBacktoTop' class='btn btn-primary' href='#header-nav'>Back to Top</a>
+                </div>
+
+                <!--Beef Section-->
+                <div id='beef' class='bg-dark col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4'>
+                    <h3 id='beefHeading' class='text-center mx-auto'>Beef</h3>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                    <a id='beefBacktoTop' class='btn btn-primary' href='#header-nav'>Back to Top</a>
+                </div>
+
+                <!--Sushi Section-->
+                <div id='sushi' class='bg-dark col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4'>
+                    <h3 id='sushiHeading' class='text-center mx-auto'>Sushi</h3>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                    <a id='sushiBacktoTop' class='btn btn-primary' href='#header-nav'>Back to Top</a>
+                </div>
+            </div>
+        </div>
 
         <!--jQuery-->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

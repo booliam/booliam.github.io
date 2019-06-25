@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    color: #FFF
+}
+
+/*Main Content*/
+#menuTitle {
+    padding: 25px;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #000;
+}
+
+#chickenHeading, #beefHeading, #sushiHeading {
+    margin: 0 auto;
+    padding: 10px;
+    width: 200px;
+}
+
+#chicken, #beef, #sushi {
+    margin: 10px;
+    border-radius: 6px;
+}
+
+#chickenBacktoTop, #beefBacktoTop, #sushiBacktoTop {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 6px;
+}
+
+p {
+    position: relative;
+    color: #A9A9;
+}
