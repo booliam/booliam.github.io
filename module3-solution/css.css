@@ -25,6 +25,8 @@ body {
 #chicken, #beef, #sushi {
     margin: 10px;
     border-radius: 6px;
+    position: relative;
+    overflow: hidden;
 }
 
 #chickenBacktoTop, #beefBacktoTop, #sushiBacktoTop {
@@ -35,6 +37,5 @@ body {
 }
 
 p {
-    position: relative;
     color: #A9A9;
 }
