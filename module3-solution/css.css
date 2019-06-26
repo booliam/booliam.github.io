@@ -5,7 +5,45 @@
 body {
     font-family: "Arial", sans-serif;
     font-size: 16px;
-    color: #FFF
+    color: #FFF;
+    background-color: #7BC5CB;
+}
+
+/*Navbar*/
+#header-nav {
+    padding: 0;
+}
+
+.navbar-brand {
+    padding: 15px;
+}
+
+.navbar-toggler {
+    margin-right: 15px;
+}
+
+#chickenButton, #beefButton, #sushiButton {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+    color: #000;
+}
+
+#chickenButton {
+    border: 2px solid #000;
+}
+
+#beefButton {
+    border-top: 0px;
+    border-right: 2px;
+    border-left: 2px;
+    border-bottom: 0px;
+    border-color: #000;
+    border-style: solid;
+}
+
+#sushiButton {
+    border: 2px solid #000;
 }
 
 /*Main Content*/
@@ -17,13 +55,11 @@ body {
 }
 
 #chickenHeading, #beefHeading, #sushiHeading {
-    margin: 0 auto;
     padding: 10px;
     width: 200px;
 }
 
 #chicken, #beef, #sushi {
-    margin: 10px;
     border-radius: 6px;
     position: relative;
     overflow: hidden;
@@ -36,6 +72,25 @@ body {
     border-radius: 6px;
 }
 
+h1 {
+    font-weight: 800;
+}
+
 p {
     color: #A9A9;
+}
+
+/*Extra Large, Large, and Medium Devices*/
+@media (min-width: 768px) {
+    #chicken, #beef, #sushi {
+        margin: 10px;
+    }
+}
+
+/*Extra Small and Small Devices*/
+@media (max-width: 767px) {
+    #chicken, #beef, #sushi {
+        margin: 10px auto;
+        height: 650px;
+    }
 }
