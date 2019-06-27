@@ -60,7 +60,7 @@ body {
 }
 
 #chicken, #beef, #sushi {
-    padding: 0 15px;
+    padding: 15px;
     border-radius: 6px;
     position: relative;
     overflow: hidden;
@@ -79,4 +79,18 @@ h1 {
 
 p {
     color: #A9A9;
+    margin-bottom: 15px;
+}
+
+/*Extra Large, Large Devices, and Medium Devices*/
+@media (min-width: 768px) {
+    #chicken, #beef, #sushi {
+        margin: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    #chicken, #beef, #sushi {
+        margin: 15px 0;
+    }
 }
