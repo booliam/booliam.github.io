@@ -10,81 +10,87 @@
         <link rel="stylesheet" href="https://use.typekit.net/hnb2arl.css">
     </head>
 
-    <body>
+    <body class='bg-muted'>
         <!--HTML-->
 
              <!--NavBar-->
-             <header>
-                <nav id='header-nav' class='navbar navbar-expand-lg navbar-dark'>
-                    <div class='container mx-auto'>  
-                        <div class='navbar-header'> 
-                            <a href="index.html">
-                                <div class='d-none d-lg-block' id='logo' alt='piano logo'></div>
-                            </a>
+                <nav id='header-nav' class='navbar navbar-expand-lg navbar-dark bg-dark'>
+                    <div class='container-fluid mx-auto'>
                         <div class='navbar-brand'>
-                            <h1 ><a href='index.html' class='' id='header1'>Sandra's Studio</a></h1>
-                                    <h2 id='header2'>Cumming, GA</h2>
+                            <a href="index.html">
+                                <div class='d-none d-md-block' id='logo' alt='piano logo'></div>
+                            </a>
+                                <h1><a href='index.html' id='header1' class='float-left text-light'>Sandra's Studio</a></h1>
+                                    <h2 id='header2' class='float-left text-info'>Cumming, GA</h2>
+                                </div>
                                         <!--Menu Button-->
-                                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                        <button class="d-flex ml-auto d-block d-lg-none navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                             <span class="navbar-toggler-icon"></span>
                                         </button>
-                                        <div class='collapse navbar-collapse' id='navbarSupportedContent'>
-                                            <ul id='nav-list' class='navbar-nav mr-auto'>
-                                                <!--Button 1-->
-                                                <li class='nav-item active float-none'>
-                                                    <a class='nav-link' id='home' href='index.html'>Home</a>
+                                        <div class='collapse navbar-collapse justify-content-end' id='navbarSupportedContent'>
+                                            <ul id='nav nav-tabs' class='navbar-nav'>
+                                                <!--Home Button-->
+                                                <li class='nav-item d-block d-lg-none text-center text-lg-right'>
+                                                    <a class='nav-link active' id='home' href='index.html'>home</a>
                                                 </li>
-                                                <!--Button 2-->
-                                                <li class='nav-item active float-none'>
-                                                    <a class='nav-link' id='lessons' href='html/new-students.html'>Looking for Lessons</a>
+                                                <!--New Students Button-->
+                                                <li class='nav-item text-center text-lg-right'>
+                                                    <a class='nav-link' id='lessons' href='html/new-students.html'>looking for lessons</a>
                                                 </li>
-                                                <!--Button 3-->
-                                                <li class='nav-item active float-none'>
-                                                    <a class='nav-link' id='existing' href='html/existing-students.html'>Already a Student</a>
+                                                <!--Previous Students Button-->
+                                                <li class='nav-item text-center text-lg-right'>
+                                                    <a class='nav-link' id='existing' href='html/existing-students.html'>already a student</a>
                                                 </li>
-                                            </ul>
-                                        </div>          
+                                                <!--Info Dropdown-->
+                                                <li class='nav-item dropdown'>
+                                                    <a class="nav-link dropdown-toggle text-center text-lg-right" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Info</a>
+                                                    <div class='dropdown-menu bg-info'>
+                                                        <a class='dropdown-item' href='#testimonials'>testimonials</a>
+                                                        <a class='dropdown-item' href='#schedule'>schedule</a>
+                                                        <a class='dropdown-item' href='#address'>address</a>
+                                                    </div>
+                                                </ul>
+                                            </div>
                                     </div>
                                 </div>
-                            </div>
-                         </nav>
-                    </header>
+                            </nav>
+                        </header>
 
             <!--Main Content-->
             <div id='main-content' class='container'>
-                <div class='jumbotron mx-auto'>
+                <div class='jumbotron shadow mx-auto'>
                     <img src='https://via.placeholder.com/1230x700.jpg' alt='' class='img-fluid d-block d-sm-none'>
                 </div>
 
                 <div id='media-tiles' class='row'>
                     <div class='col-md-6 col-sm-6 col-xs-12'>
-                        <a href='html/new-students.html'><div id='new-tile' class='mx-auto'><span>Looking for Piano Lessons</span></div></a>
+                        <a href='html/new-students.html'><div id='new-tile'><span class='bg-light text-dark'>Looking for Piano Lessons</span></div></a>
                     </div>
 
                     <div class='col-md-6 col-sm-6 col-xs-12'>
-                        <a href='html/existing-students.html'><div id='existing-tile' class='mx-auto'><span>Already a Student</span></div></a>
+                        <a href='html/existing-students.html'><div id='existing-tile'><span class='bg-light text-dark'>Already a Student</span></div></a>
                     </div>
                 </div><!--End of Tiles-->
             </div><!--End of Homepage-->
 
              <!--Footer-->
-            <footer class='panel-footer'>
+            <footer class='panel-footer bg-dark text-light'>
                 <div class='container'>
                     <div class='row'>
                         <section id='schedule' class='col-sm-4'>
-                            <span>Schedule:</span><br>
+                            <span id='scheduleTitle'>Schedule:</span><br>
                             <p>lorem ipsum<p></p>
                             <p>lorem ipsum</p>
                             <p>lorem ipsum</p>
                             <hr class='d-block d-sm-none d-md-none d-lg-none d-xl-none'>
                         </section>
                         <section id='address' class='col-sm-4'>
-                            <span>Address:</span><br>
+                            <span id='addressTitle'>Address:</span><br>
                             <p>123 lorem ipsum dolor sit amet 30020</p>
                             <hr class='d-block d-sm-none d-md-none d-lg-none d-xl-none'>
                         </section>
                         <section id='testimonials' class='col-sm-4'>
-                            <span>Testimonials:</span><br>
+                            <span id='testimonialsTitle'>Testimonials:</span><br>
                             <p>"Mrs. Sandra has been my piano teacher for over 9 months, and during all the lessons I’ve had with her I learn something new. When it gets harder she’ll walk the student through it using different examples of teaching students diligently and exceptionally. Mrs. Sandra is enjoyable to be around with her bright  personality, and being taught by her is far from boring. All in all, Mrs. Sandra is a wonderful piano teacher."</p>
                             <p>"lorem ipsum</p>
                             <p>"lorem ipsum"</p>
@@ -92,6 +98,8 @@
                     </div>
                 </div>
             </footer>
+
+            <!--Back to Top Button-->
 
         <!--jQuery-->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

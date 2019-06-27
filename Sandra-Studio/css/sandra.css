@@ -5,17 +5,11 @@
 body {
     font-size: 16px;
     font-family: "Montserrat", sans-serif;
-    color: #FDECEF;
-    background-color: #A7D8DC;
 }
 
 /*Navbar*/
 #header-nav {
     width: 100%;
-    background-color: #3985BA;
-    border-radius: 0;
-    border: 0;
-    padding-bottom: 0;
 }
 
 div.navbar-header {
@@ -39,32 +33,30 @@ div.navbar-header {
 .navbar-brand #header1 {
     text-transform: uppercase;
     font-family: bebas-neue, sans-serif;
-    float: left;
     text-shadow: 1px 1px 1px #222;
     line-height: .75;
     margin: 0;
+    padding: 0;
 }
 .navbar-brand #header2 {
     text-transform: uppercase;
-    float: left;
-    color: #DEACB7;
     margin: 0;
+    padding: 0;
     font-weight: 600;
 }
 
-.navbar-brand a:hover,.navbar-brand a:focus {
-    color: #04292C;
+ a:hover,.navbar-brand a:focus {
+    color: #FDECEF;
     text-decoration: none;
 }
 
 #header1 {
-    color: #04292C;
-    display: block;
+    color: #FDECEF;
 }
 
 /*Menu Buttons*/
 .navbar-toggler-icon {
-    color: #FFF
+    color: #FFF;
 }
 
 #nav-list {
@@ -74,16 +66,19 @@ div.navbar-header {
 #nav-list a {
     color: #F2F3F4;
     text-align: center;
-    border-radius: 8px;
 }
 
-#nav-list a:hover {
-    background-color: #FF9585;
+.nav-link {
+    text-transform: uppercase;
+}
+
+.dropdown-menu {
+    text-transform: uppercase;
+    border-radius: 8px;
 }
 
 /*Jumbotron*/
 .container .jumbotron {
-    box-shadow: 0 0 50px #635B7B;
     border: 2px solid #635B7B;
     width: auto;
     overflow: hidden;
@@ -128,8 +123,7 @@ div.navbar-header {
     text-align: center;
     text-transform: uppercase;
     font-size: 1.6em;
-    background-color: #204966;
-    color: #FFF;
+    background-color: #FFF;
     opacity: .8;
 }
 /*Footer*/
@@ -138,28 +132,51 @@ div.navbar-header {
     margin-bottom: 0;
     padding-top: 35px;
     padding-bottom: 30px;
-    background-color: #383838;
     border-radius: 8px 8px 0 0;
     border-top: 0;
 }
+
+#testimonials {
+
+}
+
+#testimonials p {
+    font-style: italic;
+}
+
+#schedule {
+
+}
+
+#schedule p {
+    line-height: 2;
+
+}
+
+#address {
+
+}
+
+#address p {
+    line-height: 1.5;
+
+}
+
 /*Responsive Framework*/
 
 /*Extra Large Devices*/
 @media (min-width: 1200px) {
 
     .navbar-brand #header1 {
-        margin: 0 30px 0 20px;
         font-size: 2em;
     }
 
     .navbar-brand #header2 {
-        margin: 15px 0 0 30px;
         font-size: 1.5em;
     }
-
-    .navbar-brand .nav-link {
-        margin: 15px 0 0 0;
-        font-size: .85em;
+    
+    #navbarSupportedContent {
+        margin-right: 75px;
     }
 
     .container .jumbotron {
@@ -177,8 +194,16 @@ div.navbar-header {
         padding: 5px 0;
     }
 
-    #schedule p, #address p, #testimonials p {
-        font-size: 11px;
+    #scheduleTitle, #addressTitle, #testimonialsTitle {
+        font-size: 1.6em;
+    }
+
+    #schedule p, #address p {
+        font-size: 1.1em;
+    }
+
+    #testimonials p {
+        font-size: .6em;
     }
 }
 
@@ -192,17 +217,15 @@ div.navbar-header {
     }
 
     .navbar-brand #header1 {
-        margin: 0 20px 0 0;
         font-size: 1.75em;
     }
 
     .navbar-brand #header2 {
-        margin: 10px 0 0 10px;
         font-size: 1.25em;
     }
 
-    .navbar-brand .nav-link {
-        font-size: .75em;
+    #navbarSupportedContent {
+        margin-right: 75px;
     }
 
     .container .jumbotron {
@@ -220,25 +243,43 @@ div.navbar-header {
         padding: 8px 0;
     }
 
-    #schedule p, #address p, #testimonials p {
-        font-size: 9px;
+    #scheduleTitle, #addressTitle, #testimonialsTitle {
+        font-size: 1.6em;
+    }
+
+    #schedule p, #address p {
+        font-size: 1em;
+    }
+
+    #testimonials p {
+        font-size: .55em;
     }
 }
 
 /*Medium Devices*/
 @media (min-width: 768px) and (max-width: 991.98px) {
 
+    #logo {
+        background: url('../images/piano-medium.png') no-repeat;
+        width: 150px;
+        height: 150px;
+    }
+
     .navbar-brand {
         width: 100%;
     }
 
     .navbar-brand #header1 {
-        margin: 0 160px 10px 45px;
+        margin: 0 0 0 10px;
         font-size: 1.5em;
     }
 
     .navbar-brand #header2 {
-        margin: 0 0 0 55px;
+        margin: 10px 0 0 10px;
+        font-size: 1em;
+    }
+
+    .navbar-brand .dropdown-item {
         font-size: 1em;
     }
 
@@ -257,8 +298,16 @@ div.navbar-header {
         padding: 10px 0;
     }
 
-    #schedule p, #address p, #testimonials p {
-        font-size: 8px;
+    #scheduleTitle, #addressTitle, #testimonialsTitle {
+        font-size: 1.3em;
+    }
+
+    #schedule p, #address p {
+        font-size: 1em;
+    }
+
+    #testimonials p {
+        font-size: .5em;
     }
 }
 
@@ -266,12 +315,12 @@ div.navbar-header {
 @media (min-width: 576px) and (max-width: 767.98px) {
 
     .navbar-brand #header1 {
-        margin: 0 40px 10px 20px;
+        margin: 0;
         font-size: 1.5em;
     }
 
     .navbar-brand #header2 {
-        margin: 0 0 0 30px;
+        margin: 10px 0 0 10px;
         font-size: 1em;
     }
 
@@ -290,8 +339,16 @@ div.navbar-header {
         padding: 10px 0;
     }
 
-    #schedule p, #address p, #testimonials p {
-        font-size: 7px;
+    #scheduleTitle, #addressTitle, #testimonialsTitle {
+        font-size: 1.3em;
+    }
+
+    #schedule p, #address p {
+        font-size: 1em;
+    }
+
+    #testimonials p {
+        font-size: .45em;
     }
 }
 
@@ -299,12 +356,12 @@ div.navbar-header {
 @media (max-width: 575.98px) {
 
     .navbar-brand #header1 {
-        margin: 0 18vw 2vw 0;
+        margin: 0;
         font-size: 10vw;
     }
 
     .navbar-brand #header2 {
-        margin: 0 0 0 5vw;
+        margin: 10px 0 0 10px;
         font-size: 3.5vw;
     }
 
@@ -323,15 +380,32 @@ div.navbar-header {
         padding: 8px 0;
     }
 
-    #schedule p, #address p, #testimonials p {
-        font-size: 7px;
+    .panel-footer section {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .panel-footer section:nth-child(3) {
+        margin-bottom: 0;
+    }
+
+    #scheduleTitle, #addressTitle, #testimonialsTitle {
+        font-size: 1.6em;
+    }
+
+    #schedule p, #address p {
+        font-size: 1em;
+    }
+
+    #testimonials p {
+        font-size: .5em;
     }
 }
 
 /*Extremely Small Devices*/
 @media (max-width: 400px) {
     .navbar-brand #header1 {
-        font-size: 8vw
+        font-size: 8vw;
     }
 
     .navbar-brand a {
