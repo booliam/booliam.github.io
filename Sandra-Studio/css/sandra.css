@@ -18,9 +18,10 @@ div.navbar-header {
 
 #logo {
     background: url('../images/piano.png') no-repeat;
+    float: left;
     width: 200px;
     height: 200px;
-    float: left;
+    margin: 0 20px 0 0;
 }
 
 .navbar-brand {
@@ -174,7 +175,7 @@ div.navbar-header {
     .navbar-brand #header2 {
         font-size: 1.5em;
     }
-    
+
     #navbarSupportedContent {
         margin-right: 75px;
     }
