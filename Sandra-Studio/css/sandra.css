@@ -101,7 +101,7 @@ div.navbar-header {
 }
 
 #new-tile:hover, #existing-tile:hover {
-    box-shadow: 0 1px 15px 8px #EFEEF1;
+    box-shadow: 0 1px 15px 8px #A9A9;
 }
 
 #new-tile {
@@ -124,7 +124,6 @@ div.navbar-header {
     text-align: center;
     text-transform: uppercase;
     font-size: 1.6em;
-    background-color: #FFF;
     opacity: .8;
 }
 /*Footer*/
