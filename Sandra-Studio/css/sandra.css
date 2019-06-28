@@ -223,10 +223,15 @@ div.navbar-header {
 
     .navbar-brand #header2 {
         font-size: 1.25em;
+        margin: 0;
     }
 
     #navbarSupportedContent {
         margin-right: 75px;
+    }
+
+    .nav-item {
+        font-size: 1em;
     }
 
     .container .jumbotron {
@@ -271,17 +276,21 @@ div.navbar-header {
     }
 
     .navbar-brand #header1 {
-        margin: 0 0 0 10px;
+        margin: 0 0 10px 10px;
         font-size: 1.5em;
     }
 
     .navbar-brand #header2 {
-        margin: 10px 0 0 10px;
+        margin: 0 0 0 10px;
         font-size: 1em;
     }
 
-    .navbar-brand .dropdown-item {
-        font-size: 1em;
+    .nav-item {
+        font-size: 2em;
+    }
+
+    .dropdown-item {
+        font-size: 1.5em;
     }
 
     .container .jumbotron {
