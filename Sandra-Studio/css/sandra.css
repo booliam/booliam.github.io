@@ -101,18 +101,20 @@ div.navbar-header {
 }
 
 #new-tile:hover, #existing-tile:hover {
-    box-shadow: 0 1px 15px 8px #A9A9;
+    box-shadow: 0 1px 15px 4px #A9A9;
 }
 
 #new-tile {
-    background: url('https://via.placeholder.com/540x200.jpg') no-repeat;
-    background-position: center;
+    background: url('../images/Adwoba-Piano.jpeg') no-repeat;
+    background-position: bottom;
+    background-size: 550px;
     height: 200px;
 }
 
 #existing-tile {
-    background: url('https://via.placeholder.com/540x200.jpg') no-repeat;
-    background-position: center;
+    background: url('../images/Liam-Piano.jpg') no-repeat;
+    background-position: bottom;
+    background-size: 700px;
     height: 200px;
 }
 
@@ -136,30 +138,12 @@ div.navbar-header {
     border-top: 0;
 }
 
-#testimonials {
-
-}
-
 #testimonials p {
     font-style: italic;
 }
 
-#schedule {
-
-}
-
 #schedule p {
     line-height: 2;
-
-}
-
-#address {
-
-}
-
-#address p {
-    line-height: 1.5;
-
 }
 
 /*Responsive Framework*/
