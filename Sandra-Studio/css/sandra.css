@@ -164,7 +164,7 @@ div.navbar-header {
     }
 
     .container .jumbotron {
-        background: url('https://via.placeholder.com/1110x500.jpg') no-repeat;
+        background: url('../images/Jumbotron-ExtraLarge.png') no-repeat;
         height: 500px;
         margin-top: 40px;
     }
@@ -218,7 +218,7 @@ div.navbar-header {
     }
 
     .container .jumbotron {
-        background: url('https://via.placeholder.com/930x400.jpg') no-repeat;
+        background: url('../images/Jumbotron-Large.png') no-repeat;
         height: 400px;
         margin-top: 40px;
     }
@@ -277,7 +277,7 @@ div.navbar-header {
     }
 
     .container .jumbotron {
-        background: url('https://via.placeholder.com/690x350.jpg') no-repeat;
+        background: url('../images/Jumbotron-Medium.png') no-repeat;
         height: 350px;
         margin-top: 40px;
     }
@@ -318,8 +318,8 @@ div.navbar-header {
     }
 
     .container .jumbotron {
-        background: url('https://via.placeholder.com/510x320.jpg') no-repeat;
-        height: 320px;
+        background: url('../images/Jumbotron-Small.png') no-repeat;
+        height: 230px;
         margin-top: 40px;
     }
 
