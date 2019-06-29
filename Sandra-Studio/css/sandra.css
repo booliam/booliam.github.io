@@ -181,7 +181,9 @@ div.navbar-header {
 
     #jumbotronItemHalf1, #jumbotronItemHalf2 {
         font-size: .75em;
-        padding: 0 60px;
+        width: 450px;
+        padding: 0 20px 20px;
+        margin: 0 40px;
     }
 
     #new-tile, #existing-tile {
@@ -243,7 +245,9 @@ div.navbar-header {
 
     #jumbotronItemHalf1, #jumbotronItemHalf2 {
         font-size: .75em;
-        padding: 0 10px;
+        width: 350px;
+        padding: 0 10px 10px;
+        margin: 0 30px;
     }
 
     #new-tile, #existing-tile {
@@ -310,7 +314,9 @@ div.navbar-header {
 
     #jumbotronItemHalf1, #jumbotronItemHalf2 {
         font-size: .55em;
-        padding: 0 10px;
+        width: 250px;
+        padding: 0 10px 10px;
+        margin: 0 20px;
     }
 
     #new-tile, #existing-tile {
@@ -359,7 +365,9 @@ div.navbar-header {
 
     #jumbotronItemHalf1, #jumbotronItemHalf2 {
         font-size: .4em;
-        padding: 0 5px;
+        width: 200px;
+        padding: 0 5px 5px;
+        margin: 0 10px;
     }
 
     #new-tile, #existing-tile {
@@ -408,8 +416,10 @@ div.navbar-header {
     }
 
     #jumbotronItemHalf1, #jumbotronItemHalf2 {
-        font-size: 1vw;
-        padding: 0 1vw;
+        font-size: 1.2vw;
+        width: 35vw;
+        padding: 0 1vw 2vw;
+        margin: 0 3vw;
     }
 
     #new-tile, #existing-tile {
@@ -452,6 +462,13 @@ div.navbar-header {
 
     .navbar-brand a {
         font-size: 5vw;
+    }
+
+    #jumbotronItemHalf1, #jumbotronItemHalf2 {
+        font-size: 1.2vw;
+        width: 35vw;
+        padding: 0 1vw 2vw;
+        margin: 0 1vw;
     }
 
     #new-tile, #existing-tile {
