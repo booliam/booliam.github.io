@@ -82,10 +82,17 @@ div.navbar-header {
 .container .jumbotron {
     border: 2px solid #635B7B;
     width: auto;
+    height: auto;
     overflow: hidden;
+    background-color: #343A40;
+    color: #FFF;
     border-radius: 8px;
     padding: 0;
     margin: 0;
+}
+
+#jumbotronTitle {
+    font-family: bebas-neue, sans-serif;
 }
 
 /*Tiles*/
@@ -164,9 +171,17 @@ div.navbar-header {
     }
 
     .container .jumbotron {
-        background: url('../images/Jumbotron-ExtraLarge.png') no-repeat;
-        height: 500px;
         margin-top: 40px;
+    }
+
+    #jumbotronTitle {
+        font-size: 4em;
+        padding: 20px;
+    }
+
+    #jumbotronItemHalf1, #jumbotronItemHalf2 {
+        font-size: .75em;
+        padding: 0 60px;
     }
 
     #new-tile, #existing-tile {
@@ -218,9 +233,17 @@ div.navbar-header {
     }
 
     .container .jumbotron {
-        background: url('../images/Jumbotron-Large.png') no-repeat;
-        height: 400px;
         margin-top: 40px;
+    }
+
+    #jumbotronTitle {
+        font-size: 3em;
+        padding: 20px;
+    }
+
+    #jumbotronItemHalf1, #jumbotronItemHalf2 {
+        font-size: .75em;
+        padding: 0 10px;
     }
 
     #new-tile, #existing-tile {
@@ -277,9 +300,17 @@ div.navbar-header {
     }
 
     .container .jumbotron {
-        background: url('../images/Jumbotron-Medium.png') no-repeat;
-        height: 350px;
         margin-top: 40px;
+    }
+
+    #jumbotronTitle {
+        font-size: 2.5em;
+        padding: 15px;
+    }
+
+    #jumbotronItemHalf1, #jumbotronItemHalf2 {
+        font-size: .55em;
+        padding: 0 10px;
     }
 
     #new-tile, #existing-tile {
@@ -318,9 +349,17 @@ div.navbar-header {
     }
 
     .container .jumbotron {
-        background: url('../images/Jumbotron-Small.png') no-repeat;
-        height: 230px;
         margin-top: 40px;
+    }
+
+    #jumbotronTitle {
+        font-size: 2em;
+        padding: 15px;
+    }
+
+    #jumbotronItemHalf1, #jumbotronItemHalf2 {
+        font-size: .4em;
+        padding: 0 5px;
     }
 
     #new-tile, #existing-tile {
@@ -361,6 +400,16 @@ div.navbar-header {
     .container .jumbotron {
         margin-top: 15px;
         margin-bottom: 15px;
+    }
+
+    #jumbotronTitle {
+        font-size: 5vw;
+        padding: 3vw;
+    }
+
+    #jumbotronItemHalf1, #jumbotronItemHalf2 {
+        font-size: 1vw;
+        padding: 0 1vw;
     }
 
     #new-tile, #existing-tile {
