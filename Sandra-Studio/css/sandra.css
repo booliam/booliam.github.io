@@ -105,16 +105,16 @@ div.navbar-header {
 }
 
 #new-tile {
-    background: url('../images/Adwoba-Piano.jpeg') no-repeat;
+    background: url('../images/Liam-Piano.jpg') no-repeat;
     background-position: bottom;
-    background-size: 550px;
+    background-size: 700px;
     height: 200px;
 }
 
 #existing-tile {
-    background: url('../images/Liam-Piano.jpg') no-repeat;
-    background-position: bottom;
-    background-size: 700px;
+    background: url('../images/Recital-Image.jpeg') no-repeat;
+    background-position: center;
+    background-size: 550px;
     height: 200px;
 }
 
