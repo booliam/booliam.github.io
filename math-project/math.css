@@ -1,5 +1,6 @@
 * {
   font-family: 'Oswald', sans-serif;
+  color: white;
   max-width: 500px;
   margin: auto;
 }
@@ -9,21 +10,17 @@ body {
 }
 
 #title-header {
-color: #000;
 text-decoration: none;
 }
 
 #title-header:hover {
-color: #000;
 text-decoration: none;
 }
 
 #title-header:active {
-color: #000;
 text-decoration: none;
 }
 
 #title-header:visited {
-color: #000;
 text-decoration: none;
 }
