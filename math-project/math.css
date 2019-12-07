@@ -1,5 +1,11 @@
 * {
   font-family: 'Oswald', sans-serif;
+  max-width: 500px;
+  margin: auto;
+}
+
+body {
+  background-image: url('https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2018/03/acj-2003-beautiful-landscapes-around-the-world-21.jpg');
 }
 
 #title-header {
