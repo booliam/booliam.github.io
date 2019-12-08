@@ -18,23 +18,23 @@ h2 {
   font-size: 1.2em;
 }
 
-.hidden-image:link {
+a:link {
 font-size: 1.5em;
 text-decoration: none;
 color: #FFF;
 }
 
-.hidden-image:visited {
+a:visited {
 text-decoration: none;
 color: #FFF;
 }
 
-.hidden-image:hover {
+a:hover {
 text-decoration: none;
 color: #FFF;
 }
 
-.hidden-image:active {
+a:active {
 text-decoration: none;
 color: #FFF;
 }
@@ -56,7 +56,7 @@ color: #FFF;
 }
 
 .btn-xlarge {
-    padding: 18px 28px;
+    padding: 28px 38px;
     font-size: 30px;
     line-height: normal;
     -webkit-border-radius: 8px;
