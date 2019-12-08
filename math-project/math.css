@@ -39,6 +39,27 @@ text-decoration: none;
 color: #FFF;
 }
 
+button:link {
+font-size: 1.5em;
+text-decoration: none;
+color: #FFF;
+}
+
+button:visited {
+text-decoration: none;
+color: #FFF;
+}
+
+button:hover {
+text-decoration: none;
+color: #FFF;
+}
+
+button:active {
+text-decoration: none;
+color: #FFF;
+}
+
 .example-image {
   width: 25%;
   height: auto;
