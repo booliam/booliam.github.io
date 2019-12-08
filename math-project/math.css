@@ -77,7 +77,7 @@ color: #FFF;
 }
 
 .btn-xlarge {
-    padding: 28px 38px;
+    padding: 18px 28px;
     font-size: 30px;
     border-radius: 20px;
     border-width: 3px;
@@ -86,4 +86,8 @@ color: #FFF;
     -webkit-border-radius: 8px;
        -moz-border-radius: 8px;
             border-radius: 8px;
+}
+
+.filler-space {
+  padding: 30px;
 }
