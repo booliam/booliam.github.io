@@ -17,8 +17,13 @@ h2 {
   font-size: 1.2em;
 }
 
-.hidden-image {
+.hidden-image:link {
 font-size: 1.5em;
+text-decoration: none;
+color: #FFF;
+}
+
+.hidden-image:visited {
 text-decoration: none;
 color: #FFF;
 }
@@ -29,11 +34,6 @@ color: #FFF;
 }
 
 .hidden-image:active {
-text-decoration: none;
-color: #FFF;
-}
-
-.hidden-image:visited {
 text-decoration: none;
 color: #FFF;
 }
