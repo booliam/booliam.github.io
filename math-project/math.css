@@ -39,26 +39,6 @@ text-decoration: none;
 color: #FFF;
 }
 
-.button-link:link {
-text-decoration: none;
-color: #FFF;
-}
-
-.button-link:visited {
-text-decoration: none;
-color: #FFF;
-}
-
-.button-link:hover {
-text-decoration: none;
-color: #FFF;
-}
-
-.button-link:active {
-text-decoration: none;
-color: #FFF;
-}
-
 .example-image {
   width: 25%;
   height: auto;
