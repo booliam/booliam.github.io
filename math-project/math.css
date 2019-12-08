@@ -9,16 +9,20 @@ body {
 
 #title-header {
 text-decoration: none;
+color: #000;
 }
 
 #title-header:hover {
 text-decoration: none;
+color: #000;
 }
 
 #title-header:active {
 text-decoration: none;
+color: #000;
 }
 
 #title-header:visited {
 text-decoration: none;
+color: #000;
 }
