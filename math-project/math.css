@@ -18,44 +18,43 @@ h2 {
   font-size: 1.2em;
 }
 
-a:link {
+.hidden-image:link {
 font-size: 1.5em;
 text-decoration: none;
 color: #FFF;
 }
 
-a:visited {
+.hidden-image:visited {
 text-decoration: none;
 color: #FFF;
 }
 
-a:hover {
+.hidden-image:hover {
 text-decoration: none;
 color: #FFF;
 }
 
-a:active {
+.hidden-image:active {
 text-decoration: none;
 color: #FFF;
 }
 
-button:link {
-font-size: 1.5em;
+.button-link:link {
 text-decoration: none;
 color: #FFF;
 }
 
-button:visited {
+.button-link:visited {
 text-decoration: none;
 color: #FFF;
 }
 
-button:hover {
+.button-link:hover {
 text-decoration: none;
 color: #FFF;
 }
 
-button:active {
+.button-link:active {
 text-decoration: none;
 color: #FFF;
 }
