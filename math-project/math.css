@@ -9,20 +9,24 @@ body {
 
 #title-header {
 text-decoration: none;
-color: #000;
+color: #FFF;
 }
 
 #title-header:hover {
 text-decoration: none;
-color: #000;
+color: #FFF;
 }
 
 #title-header:active {
 text-decoration: none;
-color: #000;
+color: #FFF;
 }
 
 #title-header:visited {
 text-decoration: none;
-color: #000;
+color: #FFF;
+}
+
+.example-image {
+  size: 50%;
 }
