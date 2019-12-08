@@ -17,23 +17,23 @@ h2 {
   font-size: 1.2em;
 }
 
-#title-header {
+.hidden-image {
 font-size: 1.5em;
 text-decoration: none;
 color: #FFF;
 }
 
-#title-header:hover {
+.hidden-image:hover {
 text-decoration: none;
 color: #FFF;
 }
 
-#title-header:active {
+.hidden-image:active {
 text-decoration: none;
 color: #FFF;
 }
 
-#title-header:visited {
+.hidden-image:visited {
 text-decoration: none;
 color: #FFF;
 }
