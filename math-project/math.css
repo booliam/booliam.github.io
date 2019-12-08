@@ -6,7 +6,8 @@
 }
 
 body {
-  background-image: url('darkbackground.jpg');
+  background-image: url('https://i.ibb.co/XFmRt2s/background-for-website.png');
+  background-size: cover;
   position: relative;
 }
 
