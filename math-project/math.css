@@ -1,5 +1,6 @@
 * {
   font-family: 'Oswald', sans-serif;
+  text-align: center;
   color: white;
 }
 
@@ -8,6 +9,7 @@ body {
 }
 
 #title-header {
+font-size: 1.5em;
 text-decoration: none;
 color: #FFF;
 }
@@ -28,6 +30,6 @@ color: #FFF;
 }
 
 .example-image {
-  width: 10%;
+  width: 15%;
   height: auto;
 }
