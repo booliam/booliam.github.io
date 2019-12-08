@@ -7,6 +7,7 @@
 
 body {
   background-image: url('darkbackground.jpg');
+  position: relative;
 }
 
 ul {
@@ -43,7 +44,27 @@ color: #FFF;
   height: auto;
 }
 
-.exampl-image-small {
+.example-image-small {
   width: 50%;
   height: auto;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.btn-primary {
+  background: transparent;
+  color: #75A6CF;
+  border: 2px solid rgba(58, 133, 191, 0.75);
+  border-radius: 40px;
+  transition: 0.3s ease 0s;
+}
+
+.btn-primary:hover {
+  background: rgba(58, 133, 191, 0.75);
+  color: #FFF;
+  border: 2px solid rgba(58, 133, 191, 0.75);
 }
