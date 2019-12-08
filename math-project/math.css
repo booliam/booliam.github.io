@@ -8,6 +8,10 @@ body {
   background-image: url('darkbackground.jpg');
 }
 
+ul {
+  list-style-type: none;
+}
+
 #title-header {
 font-size: 1.5em;
 text-decoration: none;
