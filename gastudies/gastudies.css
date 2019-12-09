@@ -6,3 +6,12 @@
 body {
   background-color: black;
 }
+
+.btn-xlarge {
+    padding: 28px 38px;
+    font-size: 60px;
+    line-height: normal;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+}
