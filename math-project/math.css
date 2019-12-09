@@ -2,11 +2,11 @@
   font-family: 'Oswald', sans-serif;
   font-size: 1.1em;
   text-align: start;
-  color: white;
+  color: #FFF;
 }
 
 body {
-  background-color: black !important;
+  background-color: #3a243b !important;
   position: relative;
 }
 
