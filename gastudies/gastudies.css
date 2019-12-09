@@ -1,17 +1,16 @@
 * {
   text-align: center !important;
-  color: white;
+  color: #FFF;
 }
 
 body {
-  background-color: black !important;
+  background-color: #00008b !important;
 }
 
-.btn-xlarge {
-    padding: 48px 68px;
-    font-size: 200px;
-    line-height: normal;
-    -webkit-border-radius: 8px;
-       -moz-border-radius: 8px;
-            border-radius: 8px;
+#titleHeader {
+  margin: 30px 0 30px 0;
+}
+
+#subText {
+  margin-bottom: 20px;
 }
