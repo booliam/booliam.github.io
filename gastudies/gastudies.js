@@ -1,6 +1,6 @@
-//Changelog for Liam. Game version 1.6
-//Improved point system accuracy.
-//Improved system of revealing points at end of game.
+//Changelog for Liam. Game version 1.4
+//Added working points system.
+//Added first base question.
 //Start getPrimaryPlayers first.
 function getPrimaryPlayers() {
 var firstPlayer = prompt("Enter first player's name.");
@@ -86,4 +86,5 @@ alert("Player Three Got: " + thirdPlayerPoints + " Points.");
 }
 if (typeof fourthPlayer == "string") {
 alert("Player Four Got: " + fourthPlayerPoints + " Points.");
+}
 }
