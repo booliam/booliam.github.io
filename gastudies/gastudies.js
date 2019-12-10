@@ -20,7 +20,7 @@ function getSecondaryPlayers() {
   } else {
     alert("I'm sorry, please type 'yes' or 'no' to continue the game.");
   getSecondaryPlayers();
-	}
+    }
 }
 //Asks if tertiary players are wanted to add.
 function getfourthPlayer() {
@@ -41,6 +41,9 @@ function gameInitiateConfirm() {
   getPrimaryPlayers();
 } else if (returntoStartScreen == "start") {
   gameplayInstructions();
+} else {
+  alert("I'm sorry, please type 'yes' or 'no' to continue the game.");
+  gameInitiateConfirm();
   }
 }
 function gameplayInstructions() {
@@ -74,7 +77,7 @@ function firstQ() {
     alert("Incorrect.");
     firstPlayerPoints -= 1;
     firstQ();
-	}
+    }
 }
 //Internal Points system working.
 //Internal point total below.
@@ -92,107 +95,5 @@ function pointTotal() {
   }
   function scoreBoard() {
 }
-function externalPoints() {
-  document.getElementById('firstPlayerScore').innerHTML = 'Player One Got: <em>' + firstPlayerPoints + ' Points';
 
-  //Changelog for Liam. Game version 1.4
-  //Added working points system.
-  //Added first base question.
-  //Start getPrimaryPlayers first.
-  function getPrimaryPlayers() {
-    var firstPlayer = prompt("Enter first player's name.");
-    var secondPlayer = prompt("Enter second player's name.");
-    getSecondaryPlayers();
-  }
-  //Asks if another player wants to be added.
-  function getSecondaryPlayers() {
-    var thirdPlayerConfirm = prompt("Would you like a third player to be added? 'yes' if yes; 'no' if no.");
-    if (thirdPlayerConfirm == "yes") {
-      var thirdPlayer = prompt("Enter third player's name.");
-      getfourthPlayer();
-    } else if (thirdPlayerConfirm == "no") {
-      alert("Okay! Proceeding...");
-      gameInitiateConfirm();
-    } else {
-      alert("I'm sorry, please type 'yes' or 'no' to continue the game.");
-    getSecondaryPlayers();
-  	}
-  }
-  //Asks if tertiary players are wanted to add.
-  function getfourthPlayer() {
-    var fourthPlayerConfirm = prompt("Would you like to add a fourth player? 'yes' if yes, 'no' if no.");
-    if (fourthPlayerConfirm == "yes") {
-      var fourthPlayer = prompt("What is the fourth player's name?");
-      gameInitiateConfirm();
-  } else if (fourthPlayerConfirm == "no") {
-    alert("Okay! Proceeding...");
-  } else {
-    alert("I'm sorry, please type 'yes' or 'no' to continue the game.");
-    }
-  }
 
-  function gameInitiateConfirm() {
-    var returntoStartScreen = prompt("To start the game, type 'start'. To return to character entering screen, type 'back'.");
-    if (returntoStartScreen == "back") {
-    getPrimaryPlayers();
-  } else if (returntoStartScreen == "start") {
-    gameplayInstructions();
-    }
-  }
-  function gameplayInstructions() {
-    alert("The game has now started. The questions will go as such:");
-    alert("The questions will all be answered as a single word or last name. Capitalize the first letter of each word. Always.");
-    alert("Punctuation is not required, and the answer will look as such: 'Plateau'");
-    alert("If the answer given is incorrect, you will be asked the question again, until completed.");
-    var gameInstructionsConfirm = prompt("If you understand, type 'yes'. If you would like the instructions to be read to you again, type 'no'.");
-    if (gameInstructionsConfirm == "yes") {
-      alert("Starting Game...");
-      firstQ();
-  } else if (gameInstructionsConfirm == "no") {
-    gameplayInstructions();
-  } else {
-    alert("I'm sorry, please type 'yes' or 'no' to continue.");
-    gameplayInstructions();
-    }
-  }
-  //From here down are the game's questions. Will be implemented at school.
-  var firstPlayerPoints = 0;
-  var secondPlayerPoints = 0;
-  var thirdPlayerPoints = 0;
-  var fourthPlayerPoints = 0;
-  function firstQ() {
-    var firstQanswer = prompt("Who is the oldest member of the Bourbon Triumvirate?");
-    if (firstQanswer == "Brown") {
-      alert("Correct!");
-      firstPlayerPoints += 1;
-      secondQ();
-    } else {
-      alert("Incorrect.");
-      firstPlayerPoints -= 1;
-      firstQ();
-  	}
-  }
-  //Internal Points system working.
-  //Internal point total below.
-  function pointTotal() {
-  //keep these guys
-    alert("Player One Got: " + firstPlayerPoints + " Points.");
-    alert("Player Two Got: " + secondPlayerPoints + " Points.");
-  //keep these boys above
-    if (typeof thirdPlayer == "string") {
-      alert("Player Three Got: " + thirdPlayerPoints + " Points.");
-    }
-    if (typeof fourthPlayer == "string") {
-      alert("Player Four Got: " + fourthPlayerPoints + " Points.");
-      }
-    }
-    function scoreBoard() {
-  }
-  function externalPoints() {
-    while (1=1) {
-    document.getElementById('firstPlayerScore').innerHTML = 'Player One Got: <em>' + firstPlayerPoints + '</em> Points';
-    document.getElementById('secondPlayerScore').innerHTML = 'Player One Got: <em>' + secondPlayerPoints + '</em> Points';
-    document.getElementById('thirdPlayerScore').innerHTML = 'Player One Got: <em>' + thirdPlayerPoints + '</em> Points';
-    document.getElementById('fourthPlayerScore').innerHTML = 'Player One Got: <em>' + fourthPlayerPoints + '</em> Points';
-  }
-}
