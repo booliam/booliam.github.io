@@ -1,5 +1,6 @@
 * {
   text-align: center !important;
+  font-size: 1.5em;
   color: #FFF;
 }
 
@@ -8,9 +9,9 @@ body {
 }
 
 #titleHeader {
-  margin: 30px 0 30px 0;
+  margin: 60px 0 60px 0;
 }
 
 #subText {
-  margin-bottom: 20px;
+  margin-bottom: 60px;
 }
