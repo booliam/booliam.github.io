@@ -21,7 +21,7 @@ ul {
 }
 
 .btn-xlg {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  font-size: 1.5em;
+  padding-top: 30px; !important
+  padding-bottom: 30px; !important
+  font-size: 1.5em; !important
 }
