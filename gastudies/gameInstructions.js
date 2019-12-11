@@ -20,8 +20,7 @@ function gameInitiateConfirm() {
 
 function gameplayInstructions() {
   alert("The game has now started. The questions will go as such:");
-  alert("The questions will all be answered as a single word or last name. Capitalize the first letter of each word. Always.");
-  alert("Punctuation is not required, and the answer will look as such: 'Plateau'");
+  alert("Do not punctuate in sentences, if punctuated, it will be marked as incorrect.");
   alert("If the answer given is incorrect, you will be asked the question again, until completed.");
   var gameInstructionsConfirm = prompt("If you understand, type 'yes'. If you would like the instructions to be read to you again, type 'no'.");
   if (gameInstructionsConfirm == "yes") {
