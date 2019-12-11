@@ -168,8 +168,7 @@ function ninthQ() {
 }
 
 function tenthQ() {
-  var tenthQanswer = prompt("Fill in the Blank: Florida sued Georgia in 2013 because they claimed that Georgia used
-too much _____?");
+  var tenthQanswer = prompt("Fill in the Blank: Florida sued Georgia in 2013 because they claimed that Georgia used too much _____?");
   if (tenthQanswer == "Water", "water") {
     alert("Correct!");
     secondPlayerPoints += 1;
@@ -379,7 +378,7 @@ function twentyfourthQ() {
 }
 
 function twentyfifthQ() {
-  var `twentyfifthQanswer = prompt("Fill in the Blank: The ____  __ ____ gave land west of the Appalachian Mtns. to Britain's Indian allies?");
+  var twentyfifthQanswer = prompt("Fill in the Blank: The ____  __ ____ gave land west of the Appalachian Mtns. to Britain's Indian allies?");
   if (twentyfifthQanswer == "Proclamation of 1763", "proclamation of 1763") {
     alert("Correct!");
     firstPlayerPoints += 1;
@@ -710,4 +709,7 @@ function fourtyeighthQ() {
     fourthPlayerPoints -= 1;
     fourtyeighthQ();
 	}
+}
+}
+}
 }
