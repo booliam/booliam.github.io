@@ -80,6 +80,9 @@ function firstQ() {
     firstPlayerPoints +=1;
     passPlayer();
     secondQ();
+  } else if (firstQanswer == "CREATORS") {
+    alert("You have accessed an Easter Egg! Press enter to redeem your prize");
+    window.open("https://www.youtube.com/watch?v=oHg5SJYRHA0");
   } else {
     alert("Incorrect.");
     firstPlayerPoints -= 1;
