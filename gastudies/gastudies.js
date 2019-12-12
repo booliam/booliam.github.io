@@ -1085,9 +1085,14 @@ function sixtiethQ() {
 }
 
 function sixtyfirstQ() {
-  var sixtyfirstQanswer = prompt("");
+  var sixtyfirstQanswer = prompt("Fill in the Blank: _____ was a jew who was lynched for allegedly murdering a 13 year-old girl.");
   sixtyfirstQanswer = sixtyfirstQanswer.toUpperCase();
-  if (sixtyfirstQanswer == "") {
+  if (sixtyfirstQanswer == "FRANK") {
+    alert("Correct!");
+    firstPlayerPoints += 1;
+    passPlayer();
+    sixtysecondQ();
+  } else if (sixtyfirstQanswer == "LEO FRANK") {
     alert("Correct!");
     firstPlayerPoints += 1;
     passPlayer();
@@ -1100,9 +1105,9 @@ function sixtyfirstQ() {
 }
 
 function sixtysecondQ() {
-  var sixtysecondQanswer = prompt("");
+  var sixtysecondQanswer = prompt("This method of disenfranchisement charged people a fee in order to vote. Most African Americans often couldn’t afford this fee");
   sixtysecondQanswer = sixtysecondQanswer.toUpperCase();
-  if (sixtysecondQanswer == "") {
+  if (sixtysecondQanswer == "POLL TAX") {
     alert("Correct!");
     secondPlayerPoints += 1;
     passPlayer();
@@ -1115,9 +1120,9 @@ function sixtysecondQ() {
 }
 
 function sixtythirdQ() {
-  var sixtythirdQanswer = prompt("");
+  var sixtythirdQanswer = prompt("FIll in the Blank: The _____ party was formed by a group of farmers that wanted changes such as tax reforms and 8 hour work days");
   sixtythirdQanswer = sixtythirdQanswer.toUpperCase();
-  if (sixtythirdQanswer == "") {
+  if (sixtythirdQanswer == "POPULIST") {
     alert("Correct!");
     thirdPlayerPoints += 1;
     passPlayer();
@@ -1130,9 +1135,24 @@ function sixtythirdQ() {
 }
 
 function sixtyfourthQ() {
-  var sixtyfourthQanswer = prompt("");
+  var sixtyfourthQanswer = prompt("This person believed that economic independence was the key for equality to blacks");
   sixtyfourthQanswer = sixtyfourthQanswer.toUpperCase();
-  if (sixtyfourthQanswer == "") {
+  if (sixtyfourthQanswer == "WASHINGTON") {
+    alert("Correct!");
+    fourthPlayerPoints += 1;
+    passPlayer();
+    scoreboard();
+  } else if (sixtyfourthQanswer == "BOOKER WASHINGTON") {
+    alert("Correct!");
+    fourthPlayerPoints += 1;
+    passPlayer();
+    scoreboard();
+  } else if (sixtyfourthQanswer == "BOOKER T WASHINGTON") {
+    alert("Correct!");
+    fourthPlayerPoints += 1;
+    passPlayer();
+    scoreboard();
+  } else if (sixtyfourthQanswer == "BOOKER T. WASHINGTON") {
     alert("Correct!");
     fourthPlayerPoints += 1;
     passPlayer();
