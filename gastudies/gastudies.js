@@ -191,6 +191,16 @@ function eighthQ() {
     fourthPlayerPoints += 1;
     passPlayer();
     ninthQ();
+  } else if (eighthQanswer == "SURFACEWATER") {
+    alert("Correct!");
+    fourthPlayerPoints += 1;
+    passPlayer();
+    ninthQ();
+  } else if (eighthQanswer == "LAKES AND RIVERS") {
+    alert("Correct!");
+    fourthPlayerPoints += 1;
+    passPlayer();
+    ninthQ();
   } else {
     alert("Incorrect.");
     fourthPlayerPoints -= 1;
@@ -206,7 +216,11 @@ function ninthQ() {
     firstPlayerPoints += 1;
     passPlayer();
     tenthQ();
-  } else {
+  } else if (ninthQanswer == "GROUNDWATER") {
+    alert("Correct!");
+    firstPlayerPoints += 1;
+    passPlayer();
+     else {
     alert("Incorrect.");
     firstPlayerPoints -= 1;
     ninthQ();
