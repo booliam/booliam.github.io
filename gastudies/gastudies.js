@@ -1,32 +1,36 @@
+//Preliminaries
 function getPrimaryPlayers() {
-  var firstPlayer = prompt("Enter first player's name.");
-  var secondPlayer = prompt("Enter second player's name.");
-  var thirdPlayer = prompt("Enter third player's name.");
-  var fourthPlayer = prompt("Enter fourth player's name");
+  var firstPlayer = prompt("Enter first player's name.", "Peter");
+  var secondPlayer = prompt("Enter second player's name.", "Griffin");
+  var thirdPlayer = prompt("Enter third player's name.", "Evan");
+  var fourthPlayer = prompt("Enter fourth player's name", "Liam");
  gameInitiateConfirm();
 }
 
 function gameInitiateConfirm() {
-  var returntoStartScreen = prompt("To start the game, type 'start'. To return to character entering screen, type 'back'.");
-  if (returntoStartScreen == "back") {
+  var returntoStartScreen = prompt("To start the game, type start. To return to character entering screen, type back.");
+  returntoStartScreen = returntoStartScreen.toUpperCase();
+  if (returntoStartScreen == "BACK") {
   getPrimaryPlayers();
-} else if (returntoStartScreen == "start") {
+} else if (returntoStartScreen == "START") {
   gameplayInstructions();
 } else {
-  alert("I'm sorry, please type 'yes' or 'no' to continue the game.");
+  alert("I'm sorry, please type start or back to continue the game.");
   gameInitiateConfirm();
   }
 }
 
 function gameplayInstructions() {
-  alert("The game has now started. The questions will go as such:");
+  alert("The game has now started. To understand the format of the questions, please read the following:");
   alert("Do not punctuate in sentences, if punctuated, it will be marked as incorrect.");
+  alert("When answering a question about a person, you may enter their full name, or, if you forget, their last name.")
   alert("If the answer given is incorrect, you will be asked the question again, until completed.");
   var gameInstructionsConfirm = prompt("If you understand, type yes. If you would like the instructions to be read to you again, type no.");
-  if (gameInstructionsConfirm == "YES", "Yes", "yes") {
+  gameInstructionsConfirm = gameInstructionsConfirm.toUpperCase();
+  if (gameInstructionsConfirm == "YES") {
     alert("Starting Game...");
     firstQ();
-} else if (gameInstructionsConfirm == "NO", "No", "no") {
+} else if (gameInstructionsConfirm == "NO") {
   gameplayInstructions();
 } else {
   alert("I'm sorry, please type yes or no to continue.");
@@ -38,16 +42,41 @@ function passPlayer() {
   alert("Please pass this device to the next player.");
 }
 
+//Scoreboard
 var firstPlayerPoints = 0;
 var secondPlayerPoints = 0;
 var thirdPlayerPoints = 0;
 var fourthPlayerPoints = 0;
 
+function scoreboard() {
+  alert(firstPlayer + '' + firstPlayerPoints + " Points");
+  alert(secondPlayer + '' + secondPlayerPoints + " Points");
+  alert(thirdPlayer + '' + thirdPlayerPoints + " Points");
+  alert(fourthPlayer + '' + fourthPlayerPoints + " Points");
+}
+
+//Questions
 function firstQ() {
   var firstQanswer = prompt("Who is the oldest member of the Bourbon Triumvirate?");
-  if (firstQanswer == "Brown", "brown") {
+  firstQanswer = firstQanswer.toUpperCase();
+  if (firstQanswer == "BROWN") {
     alert("Correct!");
     firstPlayerPoints += 1;
+    passPlayer();
+    secondQ();
+  } else if (firstQanswer == "JOSEPH BROWN") {
+    alert("Correct!");
+    firstPlayerPoints += 1;
+    passPlayer();
+    secondQ();
+  } else if (firstQanswer == "JOSEPH E BROWN") {
+    alert("Correct!");
+    firstPlayerPoints +=1;
+    passPlayer();
+    secondQ();
+  } else if (firstQanswer == "JOSEPH E. BROWN") {
+    alert("Correct!");
+    firstPlayerPoints +=1;
     passPlayer();
     secondQ();
   } else {
@@ -59,7 +88,8 @@ function firstQ() {
 
 function secondQ() {
   var secondQanswer = prompt("Which region has gentle hills, the Chattahoochee River, and the most populous city in Georgia?");
-  if (secondQanswer == "Piedmont", "piedmont") {
+  secondQanswer = secondQanswer.toUpperCase();
+  if (secondQanswer == "PIEDMONT") {
     alert("Correct!");
     secondPlayerPoints += 1;
     passPlayer();
@@ -73,7 +103,8 @@ function secondQ() {
 
 function thirdQ() {
   var thirdQanswer = prompt("Which region has Amicalola Falls and Tallulah Gorge?");
-  if (thirdQanswer == "Blue Ridge", "Blue ridge", "blue ridge") {
+  thirdQanswer = thirdQanswer.toUpperCase();
+  if (thirdQanswer == "BLUE RIDGE") {
     alert("Correct!");
     thirdPlayerPoints += 1;
     passPlayer();
@@ -86,7 +117,13 @@ function thirdQ() {
 
 function fourthQ() {
   var fourthQanswer = prompt("Which region is known for Dalton, 'The Carpet Capital of the World?'");
-  if (fourthQanswer == "Ridge & Valley", "Ridge & valley", "ridge & valley", "Ridge and Valley", "Ridge and valley", "ridge and valley", "Valley & Ridge", "Valley & ridge", "valley & ridge", "Valley and Ridge", "Valley and ridge", "valley and ridge") {
+  fourthQanswer = fourthQanswer.toUpperCase();
+  if (fourthQanswer == "RIDGE AND VALLEY") {
+    alert("Correct!");
+    fourthPlayerPoints += 1;
+    passPlayer();
+    fifthQ();
+  } else if (fourthQanswer == "VALLEY AND RIDGE") {
     alert("Correct!");
     fourthPlayerPoints += 1;
     passPlayer();
@@ -99,7 +136,8 @@ function fourthQ() {
 
 function fifthQ() {
   var fifthQanswer = prompt("Which region is also known as the TAG Corner?");
-  if (fifthQanswer == "Appalachian Plateau", "Appalachian plateau", "appalachian plateau") {
+  fifthQanswer = fifthQanswer.toUpperCase();
+  if (fifthQanswer == "APPALACHIAN PLATEAU") {
     alert("Correct!");
     firstPlayerPoints += 1;
     passPlayer();
@@ -113,7 +151,8 @@ function fifthQ() {
 
 function sixthQ() {
   var sixthQanswer = prompt("Which region is home to the Okefenokee Swamp, the Barrier Islands, and the Savannah River and is known for its fishing & seafood industry?");
-  if (sixthQanswer == "Coastal Plains", "Coastal plains", "coastal plains") {
+  sixthQanswer = sixthQanswer.toUpperCase();
+  if (sixthQanswer == "COASTAL PLAINS") {
     alert("Correct!");
     secondPlayerPoints += 1;
     passPlayer();
@@ -127,7 +166,8 @@ function sixthQ() {
 
 function seventhQ() {
   var seventhQanswer = prompt("Which line separates the Piedmont and the Coastal Plains?");
-  if (seventhQanswer == "Fall Line", "Fall line", "fall line") {
+  seventhQanswer = seventhQanswer.toUpperCase();
+  if (seventhQanswer == "FALL LINE") {
     alert("Correct!");
     thirdPlayerPoints += 1;
     passPlayer();
@@ -141,7 +181,8 @@ function seventhQ() {
 
 function eighthQ() {
   var eighthQanswer = prompt("Where does the land north of the Fall Line get its water?");
-  if (eighthQanswer == "Surface Water", "Surface water", "surface water") {
+  eighthQanswer = eighthQanswer.toUpperCase();
+  if (eighthQanswer == "SURFACE WATER") {
     alert("Correct!");
     fourthPlayerPoints += 1;
     passPlayer();
@@ -155,7 +196,8 @@ function eighthQ() {
 
 function ninthQ() {
   var ninthQanswer = prompt("Where does the land south of the Fall line get its water from?");
-  if (ninthQanswer == "Ground Water", "Ground water", "ground water") {
+  ninthQanswer = ninthQanswer.toUpperCase();
+  if (ninthQanswer == "GROUND WATER") {
     alert("Correct!");
     firstPlayerPoints += 1;
     passPlayer();
@@ -169,7 +211,8 @@ function ninthQ() {
 
 function tenthQ() {
   var tenthQanswer = prompt("Fill in the Blank: Florida sued Georgia in 2013 because they claimed that Georgia used too much _____?");
-  if (tenthQanswer == "Water", "water") {
+  tenthQanswer = tenthQanswer.toUpperCase();
+  if (tenthQanswer == "WATER") {
     alert("Correct!");
     secondPlayerPoints += 1;
     passPlayer();
@@ -183,7 +226,8 @@ function tenthQ() {
 
 function eleventhQ() {
   var eleventhQanswer = prompt("Fill in the Blank: What were the 3 reasons the Spanish explored North America were God, Gold, and ____?");
-  if (eleventhQanswer == "Glory", "glory") {
+  eleventhQanswer = eleventhQanswer.toUpperCase();
+  if (eleventhQanswer == "GLORY") {
     alert("Correct!");
     thirdPlayerPoints += 1;
     passPlayer();
@@ -197,7 +241,8 @@ function eleventhQ() {
 
 function twelfthQ() {
   var twelfthQanswer = prompt("What was England's main reason for colonizing the New World?");
-  if (twelfthQanswer == "Mercantilism", "mercantilism") {
+  twelfthQanswer = twelfthQanswer.toUpperCase();
+  if (twelfthQanswer == "MERCANTILISM") {
     alert("Correct!");
     fourthPlayerPoints += 1;
     passPlayer();
@@ -211,7 +256,8 @@ function twelfthQ() {
 
 function thirteenthQ() {
   var thirteenthQanswer = prompt("Which document granted territory to trustees with a set of rules and set up GA as a Trustee Colony?");
-  if (thirteenthQanswer == "Charter of 1732", "charter of 1732") {
+  thirteenthQanswer = thirteenthQanswer.toUpperCase();
+  if (thirteenthQanswer == "CHARTER OF 1732) {
     alert("Correct!");
     firstPlayerPoints += 1;
     passPlayer();
@@ -225,7 +271,8 @@ function thirteenthQ() {
 
 function fourteenthQ() {
   var fourteenthQanswer = prompt("Fill in the blank: King George II approved Georgia because of Philanthropy, Economics and _____?");
-  if (fourteenthQanswer == "Defense", "defense") {
+  fourteenthQanswer = fourteenthQanswer.toUpperCase();
+  if (fourteenthQanswer == "DEFENSE") {
     alert("Correct!");
     secondPlayerPoints += 1;
     passPlayer();
@@ -239,7 +286,8 @@ function fourteenthQ() {
 
 function fifteenthQ() {
   var fifteenthQanswer = prompt("What is the economic policy when a country exports more than it imports?");
-  if (fifteenthQanswer == "Mercantilism", "mercantilism") {
+  fifteenthQanswer = fifteenthQanswer.toUpperCase();
+  if (fifteenthQanswer == "MERCANTILISM") {
     alert("Correct!");
     thirdPlayerPoints += 1;
     passPlayer();
@@ -252,8 +300,9 @@ function fifteenthQ() {
 }
 
 function sixteenthQ() {
-  var sixteenthQanswer = prompt("Fill in the Blank:GA’s first settlement was named _________?");
-  if (sixteenthQanswer == "Savannah", "savannah") {
+  var sixteenthQanswer = prompt("Fill in the Blank: GA’s first settlement was named _________?");
+  sixteenthQanswer = sixteenthQanswer.toUpperCase();
+  if (sixteenthQanswer == "SAVANNAH") {
     alert("Correct!");
     fourthlayerPoints += 1;
     passPlayer();
@@ -267,7 +316,8 @@ function sixteenthQ() {
 
 function seventeenthQ() {
   var seventeenthQanswer = prompt("Fill in the Blank: In Savannah, everything was built around _____?");
-  if (seventeenthQanswer == "Squares", "squares") {
+  seventeenthQanswer = seventeenthQanswer.toUpperCase();
+  if (seventeenthQanswer == "SQUARES") {
     alert("Correct!");
     firstPlayerPoints += 1;
     passPlayer();
@@ -280,8 +330,9 @@ function seventeenthQ() {
 }
 
 function eighteenthQ() {
-  var eighteenthQanswer = prompt("Fill in the Blank: In order to come to Georgia, the Colonists had to agree to Defend the colony, not sell their land, only pass land onto male heirs, grow mulberry trees, obey all rules from the ______?");
-  if (eighteenthQanswer == "Trustees", "trustees") {
+  var eighteenthQanswer = prompt("Fill in the Blank: In order to come to Georgia, the Colonists had to agree to Defend the colony, not sell their land, only pass land onto male heirs, grow mulberry trees, and obey all rules from the ______?");
+  eighteenthQanswer = eighteenthQanswer.toUpperCase();
+  if (eighteenthQanswer == "TRUSTEES") {
     alert("Correct!");
     secondPlayerPoints += 1;
     passPlayer();
@@ -295,7 +346,8 @@ function eighteenthQ() {
 
 function nineteenthQ() {
   var nineteenthQanswer = prompt("Along with slaves and lawyers, which other group was NOT allowed in Georgia?");
-  if (nineteenthQanswer == "Catholics", "catholics") {
+  nineteenthQanswer = nineteenthQanswer.toUpperCase();
+  if (nineteenthQanswer == "CATHOLICS") {
     alert("Correct!");
     thirdPlayerPoints += 1;
     passPlayer();
@@ -309,7 +361,8 @@ function nineteenthQ() {
 
 function twentiethQ() {
   var twentiethQanswer = prompt("Along with Wine, Rice, Indigo, and Silk, what is the other WRIST crop?");
-  if (twentiethQanswer == "Tobacco", "tobacco") {
+  twentiethQanswer = twentiethQanswer.toUpperCase();
+  if (twentiethQanswer == "TOBACCO") {
     alert("Correct!");
     fourthPlayerPoints += 1;
     passPlayer();
@@ -323,7 +376,8 @@ function twentiethQ() {
 
 function twentyfirstQ() {
   var twentyfirstQanswer = prompt("What were the point of mounds in Mississippian Culture?");
-  if (twentyfirstQanswer == "Religion", "religion") {
+  twentyfirstQanswer = twentyfirstQanswer.toUpperCase();
+  if (twentyfirstQanswer == "RELIGION") {
     alert("Correct!");
     firstPlayerPoints += 1;
     passPlayer();
@@ -337,7 +391,8 @@ function twentyfirstQ() {
 
 function twentysecondQ() {
   var twentysecondQanswer = prompt("Fill in the Blank:The F&I war was fought between France and _____?");
-  if (twentysecondQanswer == "Britain", "britain") {
+  twentysecondQanswer = twentysecondQanswer.toUpperCase();
+  if (twentysecondQanswer == "BRITAIN") {
     alert("Correct!");
     secondPlayerPoints += 1;
     passPlayer();
@@ -351,7 +406,8 @@ function twentysecondQ() {
 
 function twentythirdQ() {
   var twentythirdQanswer = prompt("Fill in the Blank: The F&I war lead to the Am Rev because Britain _____ _____ the colonies?");
-  if (twentythirdQanswer == "Directly Taxed", "Directly taxed", "directly taxed") {
+  twentythirdQanswer = twentythirdQanswer.toUpperCase();
+  if (twentythirdQanswer == "DIRECTLY TAXED") {
     alert("Correct!");
     thirdPlayerPoints += 1;
     passPlayer();
@@ -364,8 +420,9 @@ function twentythirdQ() {
 }
 
 function twentyfourthQ() {
-  var twentyfourthQanswer = prompt("What was the control over colonial trade?");
-  if (twentyfourthQanswer == "Navigation Act", "Navigation act", "navigation act") {
+  var twentyfourthQanswer = prompt("What act allowed the control over colonial trade?");
+  twentyfourthQanswer = twentyfourthQanswer.toUpperCase();
+  if (twentyfourthQanswer == "NAVIGATION ACT") {
     alert("Correct!");
     fourthPlayerPoints += 1;
     passPlayer();
@@ -379,7 +436,8 @@ function twentyfourthQ() {
 
 function twentyfifthQ() {
   var twentyfifthQanswer = prompt("Fill in the Blank: The ____  __ ____ gave land west of the Appalachian Mtns. to Britain's Indian allies?");
-  if (twentyfifthQanswer == "Proclamation of 1763", "proclamation of 1763") {
+  twentyfifthQanswer = twentyfifthQanswer.toUpperCase();
+  if (twentyfifthQanswer == "PROCLAMATION OF 1763") {
     alert("Correct!");
     firstPlayerPoints += 1;
     passPlayer();
@@ -393,7 +451,8 @@ function twentyfifthQ() {
 
 function twentysixthQ() {
   var twentysixthQanswer = prompt("The Boston Tea party was a protest against what British act?");
-  if (twentysixthQanswer == "Tea Act", "Tea act", "tea act") {
+  twentysixthQanswer = twentysixthQanswer.toUpperCase();
+  if (twentysixthQanswer == "TEA ACT") {
     alert("Correct!");
     secondPlayerPoints += 1;
     passPlayer();
@@ -407,7 +466,8 @@ function twentysixthQ() {
 
 function twentyseventhQ() {
   var twentyseventhQanswer = prompt("Who was the primary author of the Declaration of Independence?");
-  if (twentyseventhQanswer == "Jefferson", "jefferson") {
+  twentyseventhQanswer = twentyseventhQanswer.toUpperCase();
+  if (twentyseventhQanswer == "JEFFERSON") {
     alert("Correct!");
     thirdPlayerPoints += 1;
     passPlayer();
@@ -420,9 +480,14 @@ function twentyseventhQ() {
 }
 
 function twentyeighthQ() {
-  var twentyeighthQanswer = prompt("Fill in the Blank:Baldwin and ______ were GA’s delegates to the Constitutional Convention?");
-  if (twentyeighthQanswer == "Few", "few") {
+  var twentyeighthQanswer = prompt("Fill in the Blank: Abraham Baldwin and ______ were GA’s delegates to the Constitutional Convention?");
+  twentyeighthQanswer = twentyeighthQanswer.toUpperCase();
+  if (twentyeighthQanswer == "FEW") {
     alert("Correct!");
+    fourthPlayerPoints += 1;
+    passPlayer();
+    twentyninthQ();
+  } else if (twentyeighthQanswer == "WILLIAM FEW") {
     fourthPlayerPoints += 1;
     passPlayer();
     twentyninthQ();
@@ -435,7 +500,8 @@ function twentyeighthQ() {
 
 function twentyninthQ() {
   var twentyninthQanswer = prompt("Fill in the Blank: The purpose of the Siege of ____ was to regain control of the city from the British Control?");
-  if (twentyninthQanswer == "Savannah", "savannah") {
+  twentyninthQanswer = twentyninthQanswer.toUpperCase();
+  if (twentyninthQanswer == "SAVANNAH") {
     alert("Correct!");
     firstPlayerPoints += 1;
     passPlayer();
@@ -448,8 +514,19 @@ function twentyninthQ() {
 }
 
 function thirtiethQ() {
-  var thirtiethQanswer = prompt("Fill in the Blank: GA was the ______th state to ratify the constitution?");
+  var thirtiethQanswer = prompt("Fill in the Blank: GA was the ______ state to ratify the constitution?");
+  thirtiethQanswer = thirtiethQanswer.toUpperCase();
   if (thirtiethQanswer == "4") {
+    alert("Correct!");
+    secondPlayerPoints += 1;
+    passPlayer();
+    thirtyfirstQ();
+  } else if (thirtiethQanswer == "FOUR") {
+    alert("Correct!");
+    secondPlayerPoints += 1;
+    passPlayer();
+    thirtyfirstQ();
+  } else if (thirtiethQanswer == "FOURTH") {
     alert("Correct!");
     secondPlayerPoints += 1;
     passPlayer();
@@ -463,7 +540,8 @@ function thirtiethQ() {
 
 function thirtyfirstQ() {
   var thirtyfirstQanswer = prompt("What was the system of land distribution that gave 200 acres of land to the head of a household, and 50 additional acres for every other member?");
-  if (thirtyfirstQanswer == "Headright System", "Headright system", "headright system") {
+  thirtyfirstQanswer = thirtyfirstQanswer.toUpperCase();
+  if (thirtyfirstQanswer == "HEADRIGHT SYSTEM") {
     alert("Correct!");
     thirdPlayerPoints += 1;
     passPlayer();
@@ -477,7 +555,8 @@ function thirtyfirstQ() {
 
 function thirtysecondQ() {
   var thirtysecondQanswer = prompt("What was the act passed in 1795 that gave four companies 35 million acres of land for $500,000?");
-  if (thirtysecondQanswer == "Yazoo Act", "Yazoo act", "yazoo act") {
+  thirtysecondQanswer = thirtysecondQanswer.toUpperCase();
+  if (thirtysecondQanswer == "YAZOO ACT") {
     alert("Correct!");
     fourthPlayerPoints += 1;
     passPlayer();
@@ -490,8 +569,9 @@ function thirtysecondQ() {
 }
 
 function thirtythirdQ() {
-  var thirtythirdQanswer = prompt("What was the system of land distribution used after the headright system?");
-  if (thirtythirdQanswer == "Land Lottery", "Land lottery", "land lottery") {
+  var thirtythirdQanswer = prompt("What was the system of land distribution implemented after the headright system?");
+  thirtythirdQanswer = thirtythirdQanswer.toUpperCase();
+  if (thirtythirdQanswer == "LAND LOTTERY") {
     alert("Correct!");
     firstPlayerPoints += 1;
     passPlayer();
@@ -505,7 +585,8 @@ function thirtythirdQ() {
 
 function thirtyfourthQ() {
   var thirtyfourthQanswer = prompt(" What was the name given to the end-point of the Western & Atlantic Railroad?");
-  if (thirtyfourthQanswer == "Terminus", "terminus") {
+  thirtyfourthQanswer = thirtyfourthQanswer.toUpperCase();
+  if (thirtyfourthQanswer == "TERMINUS") {
     alert("Correct!");
     secondPlayerPoints += 1;
     passPlayer();
@@ -519,7 +600,8 @@ function thirtyfourthQ() {
 
 function thirtyfifthQ() {
   var thirtyfifthQanswer = prompt("What was the first capital of Georgia?");
-  if (thirtyfifthQanswer == "Savannah", "savannah") {
+  thirtyfifthQanswer = thirtyfifthQanswer.toUpperCase();
+  if (thirtyfifthQanswer == "SAVANNAH") {
     alert("Correct!");
     thirdPlayerPoints += 1;
     passPlayer();
@@ -533,7 +615,8 @@ function thirtyfifthQ() {
 
 function thirtysixthQ() {
   var thirtysixthQanswer = prompt("What was the final capital of Georgia?");
-  if (thirtysixthQanswer == "Atlanta", "atlanta") {
+  thirtysixthQanswer = thirtysixthQanswer.toUpperCase();
+  if (thirtysixthQanswer == "ATLANTA") {
     alert("Correct!");
     fourthPlayerPoints += 1;
     passPlayer();
@@ -547,7 +630,8 @@ function thirtysixthQ() {
 
 function thirtyseventhQ() {
   var thirtyseventhQanswer = prompt("What was America’s first state-supported university?");
-  if (thirtyseventhQanswer == "UGA", "uga") {
+  thirtyseventhQanswer = thirtyseventhQanswer.toUpperCase();
+  if (thirtyseventhQanswer == "UGA") {
     alert("Correct!");
     firstPlayerPoints += 1;
     passPlayer();
@@ -561,7 +645,8 @@ function thirtyseventhQ() {
 
 function thirtyeighthQ() {
   var thirtyeighthQanswer = prompt("What invention by Eli Whitney made cotton a staple Southern crop?");
-  if (thirtyeighthQanswer == "Cotton Gin", "Cotton gin", "cotton gin") {
+  thirtyeighthQanswer = thirtyeighthQanswer.toUpperCase();
+  if (thirtyeighthQanswer == "COTTON GIN") {
     alert("Correct!");
     secondPlayerPoints += 1;
     passPlayer();
@@ -575,7 +660,13 @@ function thirtyeighthQ() {
 
 function thirtyninthQ() {
   var thirtyninthQanswer = prompt("Who was the Creek chief that was murdered by his people for signing the Treaty of Indian Springs?");
-  if (thirtyninthQanswer == "McIntosh", "mcintosh", "Mcintosh") {
+  thirtyninthQanswer = thirtyninthQanswer.toUpperCase();
+  if (thirtyninthQanswer == "MCINTOSH") {
+    alert("Correct!");
+    thirdPlayerPoints += 1;
+    passPlayer();
+    fortiethQ();
+  } else if (thirtyninthQanswer == "WILLIAM MCINTOSH") {
     alert("Correct!");
     thirdPlayerPoints += 1;
     passPlayer();
@@ -589,11 +680,17 @@ function thirtyninthQ() {
 
 function fortiethQ() {
   var fortiethQanswer = prompt("Who was the President of the United States who ushered along the removal of Indians?");
-  if (fourtiethQanswer == "Jackson", "jackson") {
+  fortiethQanswer = fortiethQanswer.toUpperCase();
+  if (fourtiethQanswer == "JACKSON") {
     alert("Correct!");
     fourthPlayerPoints += 1;
     passPlayer();
-    fourtfirstQ();
+    fourtyfirstQ();
+  } else if (fortiethQanswer =="ANDREW JACKSON") {
+    alert("Correct!");
+    fourthPlayerPoints += 1;
+    passPlayer();
+    fourtyfirstQ();
   } else {
     alert("Incorrect.");
     fourthPlayerPoints -= 1;
@@ -604,7 +701,8 @@ function fortiethQ() {
 
 function fourtyfirstQ() {
   var fourtyfirstQanswer = prompt("Define the following: When states decide not to follow a Federal Law");
-  if (fourtyfirstQanswer == "Nullification", "nullification") {
+  fourtyfirstQanswer = fourtyfirstQanswer.toUpperCase();
+  if (fourtyfirstQanswer == "NULLIFICATION") {
     alert("Correct!");
     firstPlayerPoints += 1;
     passPlayer();
@@ -618,7 +716,8 @@ function fourtyfirstQ() {
 
 function fourtysecondQ() {
   var fourtysecondQanswer = prompt("Fill in the blank: The North liked ____ as it encouraged people to buy goods made locally as the North had many industries");
-  if (fourtysecondQanswer == "Tariffs", "tariffs") {
+  fourtysecondQanswer = fourtysecondQanswer.toUpperCase();
+  if (fourtysecondQanswer == "TARIFFS") {
     alert("Correct!");
     secondPlayerPoints += 1;
     passPlayer();
@@ -632,7 +731,8 @@ function fourtysecondQ() {
 
 function fourtythirdQ() {
   var fourtythirdQanswer = prompt("This compromise made Missouri a slave state and made Maine a free state. Missouri’s southern border would be the boundary between free and slave states");
-  if (fourtythirdQanswer == "Missouri Compromise", "missouri compromise") {
+  fourtythirdQanswer = fourtythirdQanswer.toUpperCase();
+  if (fourtythirdQanswer == "MISSOURI COMPROMISE") {
     alert("Correct!");
     thirdPlayerPoints += 1;
     passPlayer();
@@ -656,8 +756,14 @@ function fourtyfourthQ() {
 }
 
 function fourtyfifthQ() {
-  var fourtyfifthQanswer = prompt(" Name the person: This person was a slave that moved to a free state and his daughter was born there. He argued that since he lived in a free state and since his daughter was also born in a free state, that they were no longer slaves and were free to go?");
-  if (fourtyfifthQanswer == "Scott", "scott") {
+  var fourtyfifthQanswer = prompt("Name the person who was a slave that moved to a free state and his daughter was born there. He argued that since he lived in a free state and since his daughter was also born in a free state, that they were no longer slaves and were free to go");
+  fourtyfifthQanswer = fourtyfifthQanswer.toUpperCase();
+  if (fourtyfifthQanswer == "SCOTT") {
+    alert("Correct!");
+    firstPlayerPoints += 1;
+    passPlayer();
+    fourtysixthQ();
+  } else if (fourtyfifthQanswer == "DRED SCOTT") {
     alert("Correct!");
     firstPlayerPoints += 1;
     passPlayer();
@@ -670,8 +776,9 @@ function fourtyfifthQ() {
 }
 
 function fourtysixthQ() {
-  var fourtysixthQanswer = prompt("FIll in the blank: The _____ Plan was the nickname given to the Union Blockade that implemented so that the South couldn’t trade with Europe?");
-  if (fourtysixthQanswer == "Anaconda", "anaconda") {
+  var fourtysixthQanswer = prompt("Fill in the blank: The _____ Plan was the nickname given to the Union Blockade that implemented so that the South couldn’t trade with Europe?");
+  fourtysixthQanswer = fourtysixthQanswer.toUpperCase();
+  if (fourtysixthQanswer == "ANACONDA") {
     alert("Correct!");
     secondPlayerPoints += 1;
     passPlayer();
@@ -685,7 +792,8 @@ function fourtysixthQ() {
 
 function fourtyseventhQ() {
   var fourtyseventhQanswer = prompt("Fill in the blank. The ______ Proclamation declared that all slaves in slave states were freed");
-  if (fourtyseventhQanswer == "Emancipation", "emancipation") {
+  fourtyseventhQanswer = fourtyseventhQanswer.toUpperCase();
+  if (fourtyseventhQanswer == "EMANCIPATION") {
     alert("Correct!");
     thirdPlayerPoints += 1;
     passPlayer();
@@ -699,7 +807,8 @@ function fourtyseventhQ() {
 
 function fourtyeighthQ() {
   var fourtyeighthQanswer = prompt(" What battle was the bloodiest battle of the war and was considered the turning point of the war?");
-  if (fourtyeighthQanswer == "Gettysburg", "gettysburg") {
+  fourtyeighthQanswer = fourtyeighthQanswer.toUpperCase();
+  if (fourtyeighthQanswer == "GETTYSBURG") {
     alert("Correct!");
     fourthPlayerPoints += 1;
     passPlayer();
