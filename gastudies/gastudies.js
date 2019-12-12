@@ -28,7 +28,7 @@ function gameplayInstructions() {
   var gameInstructionsConfirm = prompt("If you understand, type yes. If you would like the instructions to be read to you again, type no.");
   gameInstructionsConfirm = gameInstructionsConfirm.toUpperCase();
   if (gameInstructionsConfirm == "YES") {
-    alert("Starting Game...");
+    alert("Starting Game (Press Enter to Continue)");
     firstQ();
 } else if (gameInstructionsConfirm == "NO") {
   gameplayInstructions();
@@ -308,7 +308,7 @@ function sixteenthQ() {
   sixteenthQanswer = sixteenthQanswer.toUpperCase();
   if (sixteenthQanswer == "SAVANNAH") {
     alert("Correct!");
-    fourthlayerPoints += 1;
+    fourthPlayerPoints += 1;
     passPlayer();
     seventeenthQ();
   } else {
