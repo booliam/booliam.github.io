@@ -1,6 +1,6 @@
 function searchData() {
   var searchInput = prompt('What Would You Like to Open?')
-  searchInput = searchInput.toUpperCase;
+  searchInput = searchInput.toUpperCase();
 
   if (searchInput == 'ANSWER KEY') {
     answerKey();
