@@ -11,3 +11,7 @@ h1 {
 body {
   background-image: url('https://i.ibb.co/QcDDQMt/chevron.png') !important;
 }
+
+.btn {
+  width: 350px !important;
+}
