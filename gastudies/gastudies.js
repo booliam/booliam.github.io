@@ -1,7 +1,7 @@
 //Preliminaries
 function getPrimaryPlayers() {
-  var firstPlayer = prompt("Enter first player's name.", "Peter");
-  var secondPlayer = prompt("Enter second player's name.", "Griffin");
+  var firstPlayer = prompt("Enter first player's name.", "Shalmik");
+  var secondPlayer = prompt("Enter second player's name.", "Preston");
   var thirdPlayer = prompt("Enter third player's name.", "Evan");
   var fourthPlayer = prompt("Enter fourth player's name", "Liam");
  gameInitiateConfirm();
@@ -25,6 +25,7 @@ function gameplayInstructions() {
   alert("Do not punctuate in sentences, if punctuated, it will be marked as incorrect.");
   alert("When answering a question about a person, you may enter their full name, or, if you forget, their last name.")
   alert("If the answer given is incorrect, you will be asked the question again, until completed.");
+  alert("If you consistently get a question wrong, consult your teammates for help.")
   var gameInstructionsConfirm = prompt("If you understand, type yes. If you would like the instructions to be read to you again, type no.");
   gameInstructionsConfirm = gameInstructionsConfirm.toUpperCase();
   if (gameInstructionsConfirm == "YES") {
@@ -53,10 +54,6 @@ function scoreboard() {
   alert(secondPlayer + '' + secondPlayerPoints + " Points");
   alert(thirdPlayer + '' + thirdPlayerPoints + " Points");
   alert(fourthPlayer + '' + fourthPlayerPoints + " Points");
-}
-
-function scoreboardButton() {
-  document.getElementById('btnScore').className = document.getElementById('btnScore').className.replace( /(?:^|\s)button-invisible(?!\S)/g , 'button-visible')
 }
 
 //Questions
@@ -393,9 +390,9 @@ function twentiethQ() {
 }
 
 function twentyfirstQ() {
-  var twentyfirstQanswer = prompt("What were the point of mounds in Mississippian Culture?");
+  var twentyfirstQanswer = prompt("The French and Indian War was fought over control of the land in the ____ ____ valley");
   twentyfirstQanswer = twentyfirstQanswer.toUpperCase();
-  if (twentyfirstQanswer == "RELIGION") {
+  if (twentyfirstQanswer == "OHIO RIVER") {
     alert("Correct!");
     firstPlayerPoints += 1;
     passPlayer();
@@ -1079,11 +1076,71 @@ function sixtiethQ() {
     alert("Correct!");
     fourthPlayerPoints += 1;
     passPlayer();
-    scoreboardButton();
+    sixtyfirstQ();
   } else {
     alert("Incorrect.");
     fourthPlayerPoints -= 1;
     sixtiethQ();
+	}
+}
+
+function sixtyfirstQ() {
+  var sixtyfirstQanswer = prompt("");
+  sixtyfirstQanswer = sixtyfirstQanswer.toUpperCase();
+  if (sixtyfirstQanswer == "") {
+    alert("Correct!");
+    firstPlayerPoints += 1;
+    passPlayer();
+    sixtysecondQ();
+  } else {
+    alert("Incorrect.");
+    firstPlayerPoints -= 1;
+    sixtyfirstQ();
+	}
+}
+
+function sixtysecondQ() {
+  var sixtysecondQanswer = prompt("");
+  sixtysecondQanswer = sixtysecondQanswer.toUpperCase();
+  if (sixtysecondQanswer == "") {
+    alert("Correct!");
+    secondPlayerPoints += 1;
+    passPlayer();
+    sixtythirdQ();
+  } else {
+    alert("Incorrect.");
+    secondPlayerPoints -= 1;
+    sixtysecondQ();
+	}
+}
+
+function sixtythirdQ() {
+  var sixtythirdQanswer = prompt("");
+  sixtythirdQanswer = sixtythirdQanswer.toUpperCase();
+  if (sixtythirdQanswer == "") {
+    alert("Correct!");
+    thirdPlayerPoints += 1;
+    passPlayer();
+    sixtyfourthQ();
+  } else {
+    alert("Incorrect.");
+    thirdPlayerPoints -= 1;
+    sixtythirdQ();
+	}
+}
+
+function sixtyfourthQ() {
+  var sixtyfourthQanswer = prompt("");
+  sixtyfourthQanswer = sixtyfourthQanswer.toUpperCase();
+  if (sixtyfourthQanswer == "") {
+    alert("Correct!");
+    fourthPlayerPoints += 1;
+    passPlayer();
+    scoreboard();
+  } else {
+    alert("Incorrect.");
+    fourthPlayerPoints -= 1;
+    sixtyfourthQ();
 	}
 }
 }
