@@ -15,11 +15,11 @@ function searchData() {
 
 
 function answerKey() {
-  alert('Opening Answer Key (Press Enter to Continue)')
-  window.open('https://docs.google.com/document/d/1SeLjhDm7iMXEszsadJrbSG9SynIb7qBekEJrYlZeVx4/edit?usp=sharing', '_self')
+  alert('Opening Answer Key (Press Enter to Continue)');
+  window.open('https://docs.google.com/document/d/1SeLjhDm7iMXEszsadJrbSG9SynIb7qBekEJrYlZeVx4/edit?usp=sharing');
 }
 
 function openRepository() {
-  alert('Opening Repository (Press Enter to Continue)')
-  window.open('https://github.com/booliam/booliam.github.io/tree/master/gastudies')
+  alert('Opening Repository (Press Enter to Continue)');
+  window.open('https://github.com/booliam/booliam.github.io/tree/master/gastudies');
 }
