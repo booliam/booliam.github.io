@@ -7,3 +7,7 @@ h1 {
   margin: 10px;
   font-size: 1.4em;
 }
+
+body {
+  background-image: url('https://i.ibb.co/QcDDQMt/chevron.png') !important;
+}
