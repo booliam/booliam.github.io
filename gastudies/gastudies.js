@@ -257,7 +257,7 @@ function twelfthQ() {
 function thirteenthQ() {
   var thirteenthQanswer = prompt("Which document granted territory to trustees with a set of rules and set up GA as a Trustee Colony?");
   thirteenthQanswer = thirteenthQanswer.toUpperCase();
-  if (thirteenthQanswer == "CHARTER OF 1732) {
+  if (thirteenthQanswer == "CHARTER OF 1732") {
     alert("Correct!");
     firstPlayerPoints += 1;
     passPlayer();
