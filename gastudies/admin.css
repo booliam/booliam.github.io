@@ -2,7 +2,14 @@
   text-align: center;
 }
 
+body {
+  background-image: url('https://i.ibb.co/QcDDQMt/chevron.png') !important;
+}
+
 h1 {
   font-size: 2em;
+}
+
+.row {
   margin: 30px;
 }
