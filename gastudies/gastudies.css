@@ -19,3 +19,11 @@ ul {
 #subText {
   margin-bottom: 60px;
 }
+
+.button-visible {
+  visibility: visible;
+}
+
+.button-invisible {
+  visibility: hidden;
+}
