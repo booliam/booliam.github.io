@@ -50,10 +50,10 @@ var thirdPlayerPoints = 0;
 var fourthPlayerPoints = 0;
 
 function scoreboard() {
-  alert(firstPlayer + '' + firstPlayerPoints + " Points");
-  alert(secondPlayer + '' + secondPlayerPoints + " Points");
-  alert(thirdPlayer + '' + thirdPlayerPoints + " Points");
-  alert(fourthPlayer + '' + fourthPlayerPoints + " Points");
+  alert("Player One Got: " + firstPlayerPoints + " Points");
+  alert("Player Two Got: " + '' + secondPlayerPoints + " Points");
+  alert("Player Three Got: " + '' + thirdPlayerPoints + " Points");
+  alert("Player Four Got: " + '' + fourthPlayerPoints + " Points");
 }
 
 //Questions
