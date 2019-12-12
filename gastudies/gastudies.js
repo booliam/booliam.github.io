@@ -1,3 +1,8 @@
+//Log In
+function loginButton() {
+  window.open('login.html', '_self')
+}
+
 //Preliminaries
 function getPrimaryPlayers() {
   var firstPlayer = prompt("Enter first player's name.", "Shalmik");
