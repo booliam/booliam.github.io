@@ -806,7 +806,7 @@ function fourtyseventhQ() {
 }
 
 function fourtyeighthQ() {
-  var fourtyeighthQanswer = prompt(" What battle was the bloodiest battle of the war and was considered the turning point of the war?");
+  var fourtyeighthQanswer = prompt("What battle was the bloodiest battle of the war and was considered the turning point of the war?");
   fourtyeighthQanswer = fourtyeighthQanswer.toUpperCase();
   if (fourtyeighthQanswer == "GETTYSBURG") {
     alert("Correct!");
@@ -817,6 +817,255 @@ function fourtyeighthQ() {
     alert("Incorrect.");
     fourthPlayerPoints -= 1;
     fourtyeighthQ();
+	}
+}
+
+function fourtyninthQ() {
+  var fourtyninthQanswer = prompt("The Infamous March to the Sea was led by which General?");
+  fourtyninthQanswer = fourtyninthQanswer.toUpperCase();
+  if (fourtyninthQanswer == "SHERMAN") {
+    alert("Correct!");
+    firstPlayerPoints += 1;
+    passPlayer();
+    fourtyninthQ();
+  } else if (fourtyninthQanswer == "WILLIAM SHERMAN") {
+    alert("Correct!");
+    firstPlayerPoints += 1;
+    passPlayer();
+    fourtyninthQ();
+  } else if (fourtyninthQanswer == "WILLIAM T SHERMAN") {
+    alert("Correct!");
+    firstPlayerPoints += 1;
+    passPlayer();
+    fourtyninthQ();
+  } else if (fourtyninthQanswer == "WILLIAM T. SHERMAN") {
+    alert("Correct!");
+    firstPlayerPoints += 1;
+    passPlayer();
+    fourtyninthQ();
+  } else {
+    alert("Incorrect.");
+    firstPlayerPoints -= 1;
+    fiftiethQ();
+	}
+}
+
+function fiftiethQ() {
+  var fiftiethQanswer = prompt("Fill in the blank: Andersonville prison was designed to hold 10 thousand Union Soldiers but it actually held ____ thousand soldiers");
+  fiftiethQanswer = fiftiethQanswer.toUpperCase();
+  if (fiftiethQanswer == "30") {
+    alert("Correct!");
+    secondPlayerPoints += 1;
+    passPlayer();
+    fiftyfirstQ();
+  } else if (fiftiethQanswer == "THIRTY") {
+    alert("Correct!");
+    secondPlayerPoints += 1;
+    passPlayer();
+    fiftyfirstQ();
+  } else {
+    alert("Incorrect.");
+    secondPlayerPoints -= 1;
+    fiftiethQ();
+	}
+}
+
+function fiftyfirstQ() {
+  var fiftyfirstQanswer = prompt("Which phase put the southern states under the watch of the military?");
+  fiftyfirstQanswer = fiftyfirstQanswer.toUpperCase();
+  if (fiftyfirstQanswer == "3") {
+    alert("Correct!");
+    thirdPlayerPoints += 1;
+    passPlayer();
+    fiftysecondQ();
+  } if (fiftyfirstQanswer == "THIRD") {
+    alert("Correct!");
+    thirdPlayerPoints += 1;
+    passPlayer();
+    fiftysecondQ();
+  } else {
+    alert("Incorrect.");
+    thirdPlayerPoints -= 1;
+    fiftyfirstQ();
+	}
+}
+
+
+function fiftysecondQ() {
+  var fiftysecondQanswer = prompt("FIll in the blank: The ____ amendment abolished slavery");
+  fiftysecondQanswer = fiftysecondQanswer.toUpperCase();
+  if (fiftysecondQanswer == "13") {
+    alert("Correct!");
+    fourthPlayerPoints += 1;
+    passPlayer();
+    fiftythirdQ();
+  } else if (fiftysecondQanswer == "THIRTEENTH") {
+    alert("Correct!");
+    fourthPlayerPoints += 1;
+    passPlayer();
+    fiftythirdQ();
+  } else {
+    alert("Incorrect.");
+    fourthPlayerPoints -= 1;
+    fiftysecondQ();
+	}
+}
+
+
+function fiftythirdQ() {
+  var fiftythirdQanswer = prompt("This racist group’s motive was to keep freedmen from voting");
+  fiftythirdQanswer = fiftythirdQanswer.toUpperCase();
+  if (fiftythirdQanswer == "KKK") {
+    alert("Correct!");
+    fiftythirdQPlayerPoints += 1;
+    passPlayer();
+    fiftyfourthQ();
+  } else if (fiftythirdQanswer == "KU KLUX KLAN") {
+    alert("Correct!");
+    fiftythirdQPlayerPoints += 1;
+    passPlayer();
+    fiftyfourthQ();
+  } else if (fiftythirdQanswer == "KLU KLUX KLAN") {
+    alert("Correct!");
+    fiftythirdQPlayerPoints += 1;
+    passPlayer();
+    fiftyfourthQ();
+  } else {
+    alert("Incorrect.");
+    firstPlayerPoints -= 1;
+    fiftythirdQ();
+	}
+}
+
+
+function fiftyfourthQ() {
+  var fiftyfourthQanswer = prompt("Who invented the Rural Free Delivery Bill that delivered mail to houses in rural areas, free of charge?");
+  fiftyfourthQanswer = fiftyfourthQanswer.toUpperCase();
+  if (fiftyfourthQanswer == "WATSON") {
+    alert("Correct!");
+    secondPlayerPoints += 1;
+    passPlayer();
+    fiftyfifthQ();
+  } else if (fiftyfourthQanswer == "TOM WATSON") {
+    alert("Correct!");
+    secondPlayerPoints += 1;
+    passPlayer();
+    fiftyfifthQ();
+  } else if (fiftyfourthQanswer == "THOMAS WATSON") {
+    alert("Correct!");
+    secondPlayerPoints += 1;
+    passPlayer();
+    fiftyfifthQ();
+  } else {
+    alert("Incorrect.");
+    secondPlayerPoints -= 1;
+    fiftyfourthQ();
+	}
+}
+
+
+function fiftyfifthQ() {
+  var fiftyfifthQanswer = prompt("This was the name given to the 3 Georgia Politicians that were known for being white supremacists");
+  fiftyfifthQanswer = fiftyfifthQanswer.toUpperCase();
+  if (fiftyfifthQanswer == "BOURBON TRIUMVIRATE") {
+    alert("Correct!");
+    thirdPlayerPoints += 1;
+    passPlayer();
+    fiftysixthQ();
+  } else {
+    alert("Incorrect.");
+    thirdPlayerPoints -= 1;
+    fiftyfifthQ();
+	}
+}
+
+
+function fiftysixthQ() {
+  var fiftysixthQanswer = prompt("FIll in the blank: The _____ ______ system was invented by the Bourbon Triumvirate");
+  fiftysixthQanswer = fiftysixthQanswer.toUpperCase();
+  if (fiftysixthQanswer == "CONVICT LEASE") {
+    alert("Correct!");
+    fourthPlayerPoints += 1;
+    passPlayer();
+    fiftyseventhQ();
+  } else {
+    alert("Incorrect.");
+    fourthPlayerPoints -= 1;
+    fiftysixthQ();
+	}
+}
+
+
+function fiftyseventhQ() {
+  var fiftyseventhQanswer = prompt("Who was the editor of the Atlanta Constitution?");
+  fiftyseventhQanswer = fiftyseventhQanswer.toUpperCase();
+  if (fiftyseventhQanswer == "GRADY") {
+    alert("Correct!");
+    firstPlayerPoints += 1;
+    passPlayer();
+    fiftyeighthQ();
+  } else if (fiftyseventhQanswer == "HENRY GRADY") {
+    alert("Correct!");
+    firstPlayerPoints += 1;
+    passPlayer();
+    fiftyeighthQ();
+  } else {
+    alert("Incorrect.");
+    firstPlayerPoints -= 1;
+    fiftyseventhQ();
+	}
+}
+
+
+function fiftyeighthQ() {
+  var fiftyeighthQanswer = prompt("This event was designed to show off Atlanta as a modern city");
+  fiftyeighthQanswer = fiftyeighthQanswer.toUpperCase();
+  if (fiftyeighthQanswer == "INTERNATIONAL COTTON EXPOSITION") {
+    alert("Correct!");
+    secondPlayerPoints += 1;
+    passPlayer();
+    fiftyninthQ();
+  } else {
+    alert("Incorrect.");
+    secondPlayerPoints -= 1;
+    fiftyeighthQ();
+	}
+}
+
+
+function fiftyninthQ() {
+  var fiftyninthQanswer = prompt("This event was when Whites brutally attacked African Americans after a false story was published that claimed that a Black attacked a white woman");
+  fiftyninthQanswer = fiftyninthQanswer.toUpperCase();
+  if (fiftyninthQanswer == "1906 ATLANTA RACE RIOT") {
+    alert("Correct!");
+    thirdPlayerPoints += 1;
+    passPlayer();
+    sixtiethQ();
+  } else if (fiftyninthQanswer == "ATLANTA RACE RIOT") {
+    alert("Correct!");
+    thirdPlayerPoints += 1;
+    passPlayer();
+    sixtiethQ();
+  } else {
+    alert("Incorrect.");
+    thirdPlayerPoints -= 1;
+    fiftyninthQ();
+	}
+}
+
+
+function sixtiethQ() {
+  var sixtiethQanswer = prompt("What laws were used to segregate races in the south?");
+  sixtiethQanswer = sixtiethQanswer.toUpperCase();
+  if (sixtiethQanswer == "JIM CROW LAWS") {
+    alert("Correct!");
+    fourthPlayerPoints += 1;
+    passPlayer();
+    scoreboard();
+  } else {
+    alert("Incorrect.");
+    fourthPlayerPoints -= 1;
+    sixtiethQ();
 	}
 }
 }
