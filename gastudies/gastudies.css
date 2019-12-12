@@ -20,10 +20,6 @@ ul {
   margin-bottom: 60px;
 }
 
-.button-visible {
-  visibility: visible;
-}
-
-.button-invisible {
-  visibility: hidden;
+.btnRow {
+  margin: 15px;
 }
