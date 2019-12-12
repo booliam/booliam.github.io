@@ -28,7 +28,7 @@ function gameplayInstructions() {
   var gameInstructionsConfirm = prompt("If you understand, type yes. If you would like the instructions to be read to you again, type no.");
   gameInstructionsConfirm = gameInstructionsConfirm.toUpperCase();
   if (gameInstructionsConfirm == "YES") {
-    alert("Starting Game (Press Enter to Continue");
+    alert("Starting Game (Press Enter to Continue)");
     firstQ();
 } else if (gameInstructionsConfirm == "NO") {
   gameplayInstructions();
