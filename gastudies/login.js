@@ -23,6 +23,6 @@ function auth(form) {
   } else if (user == admin4 && pass == admin4pwd) {
     window.open('admin.html', '_self');
   } else {
-    window.open('gastudies.html', '_self');
+    alert('Incorrect Username or Password.')
   }
 }
