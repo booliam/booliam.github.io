@@ -304,7 +304,7 @@ function sixteenthQ() {
   sixteenthQanswer = sixteenthQanswer.toUpperCase();
   if (sixteenthQanswer == "SAVANNAH") {
     alert("Correct!");
-    fourthlayerPoints += 1;
+    fourthPlayerPoints += 1;
     passPlayer();
     seventeenthQ();
   } else {
