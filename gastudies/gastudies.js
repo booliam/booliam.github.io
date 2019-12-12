@@ -55,6 +55,10 @@ function scoreboard() {
   alert(fourthPlayer + '' + fourthPlayerPoints + " Points");
 }
 
+function scoreboardButton() {
+  document.getElementById('btnScore').className = document.getElementById('btnScore').className.replace( /(?:^|\s)button-invisible(?!\S)/g , 'button-visible')
+}
+
 //Questions
 function firstQ() {
   var firstQanswer = prompt("Who is the oldest member of the Bourbon Triumvirate?");
@@ -1061,7 +1065,7 @@ function sixtiethQ() {
     alert("Correct!");
     fourthPlayerPoints += 1;
     passPlayer();
-    scoreboard();
+    scoreboardButton();
   } else {
     alert("Incorrect.");
     fourthPlayerPoints -= 1;
