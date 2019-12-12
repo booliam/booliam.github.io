@@ -9,10 +9,10 @@ function auth(form) {
   var admin2pwd = '072305';
 
   if (user == admin && pass == adminpwd) {
-    window.open('admin.html');
+    window.open('admin.html', '_self');
   } else if (user == admin2 && pass == admin2pwd) {
-    window.open('admin.html');
+    window.open('admin.html', '_self');
   } else {
-    window.open('gastudies.html');
+    window.open('gastudies.html', '_self');
   }
 }
