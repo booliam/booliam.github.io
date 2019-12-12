@@ -10,10 +10,10 @@ function getPrimaryPlayers() {
 function gameInitiateConfirm() {
   var returntoStartScreen = prompt("To start the game, type start. To return to character entering screen, type back.");
   returntoStartScreen = returntoStartScreen.toUpperCase();
-  if (returntoStartScreen == "BACK") {
-  getPrimaryPlayers();
-} else if (returntoStartScreen == "START") {
+  if (returntoStartScreen == "START", "start") {
   gameplayInstructions();
+} else if (returntoStartScreen == "BACK") {
+  getPrimaryPlayers();
 } else {
   alert("I'm sorry, please type start or back to continue the game.");
   gameInitiateConfirm();
