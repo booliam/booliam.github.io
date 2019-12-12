@@ -12,7 +12,7 @@ function auth(form) {
   var admin3pwd = 'shalmik23';
 
   var admin4 = 'yeehawdaddy.edu';
-  var admin4pwd = 'guitarpreston52'
+  var admin4pwd = 'guitarpreston52';
 
   if (user == admin && pass == adminpwd) {
     window.open('admin.html', '_self');
