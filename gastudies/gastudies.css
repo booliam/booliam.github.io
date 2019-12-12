@@ -23,3 +23,7 @@ ul {
 .btnRow {
   margin: 15px;
 }
+
+.btn {
+  width: 210px !important;
+}
