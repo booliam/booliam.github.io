@@ -10,6 +10,8 @@ function searchData() {
   }
   else if (searchInput == 'REPOSITORY') {
     openRepository();
+  } else if (searchInput == 'LOL') {
+    openSnake();
   }
 }
 
@@ -22,4 +24,9 @@ function answerKey() {
 function openRepository() {
   alert('Opening Repository (Press Enter to Continue)');
   window.open('https://github.com/booliam/booliam.github.io/tree/master/gastudies');
+}
+
+function openSnake() {
+  alert('Opening Snake (Press Enter to Continue)');
+  window.open('https://www.google.com/search?q=snake&rlz=1C5CHFA_enUS870US870&oq=snake&aqs=chrome..69i57j0l5.655j0j4&sourceid=chrome&ie=UTF-8');
 }
