@@ -13,5 +13,6 @@ body {
 }
 
 .btn {
-  width: 350px !important;
+  width: 275px !important;
+  height: 100px !important;
 }
