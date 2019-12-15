@@ -13,23 +13,97 @@
     <script src="https://js.braintreegateway.com/web/dropin/1.21.0/js/dropin.min.js"></script>
     <script src='js/sandra.js'></script>
   </head>
-  <body>
-    <div class='container'>
-      <div class="row">
-        <h1>Existing Students</h1>
-      </div>
+  <body class='bg-light'>
+      <!--HTML-->
 
-      <div class='row'>
-        <h2>How Much?</h2>
-        <p>I charge $140 a month, or about $30 per week.</p>
-      </div>
+           <!--NavBar-->
+              <nav id='header-nav' class='navbar navbar-expand-lg navbar-dark bg-dark'>
+                  <div class='container-fluid mx-auto'>
+                      <div class='navbar-brand'>
+                          <a href="../index.html">
+                              <div class='d-none d-md-block' id='logo' alt='piano logo'></div>
+                          </a>
+                              <h1><a href='index.html' id='header1' class='d-flex text-light'>Sandra's Studio</a></h1>
+                                  <h2 id='header2' class='d-flex text-info'>Cumming, GA</h2>
+                              </div>
+                                      <!--Menu Button-->
+                                      <button id='menuButton' class="d-flex ml-auto d-block d-lg-none navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                          <span class="navbar-toggler-icon"></span>
+                                      </button>
+                                      <div class='collapse navbar-collapse justify-content-end' id='navbarSupportedContent'>
+                                          <ul id='nav nav-tabs' class='navbar-nav'>
+                                              <!--Home Button-->
+                                              <li class='nav-item d-block d-lg-none text-center text-lg-right'>
+                                                  <a class='nav-link active' id='home' href='index.html'>home</a>
+                                              </li>
+                                              <!--New Students Button-->
+                                              <li class='nav-item text-center text-lg-right'>
+                                                  <a class='nav-link' id='lessons' href='new-students.html'>looking for lessons</a>
+                                              </li>
+                                              <!--Previous Students Button-->
+                                              <li class='nav-item text-center text-lg-right'>
+                                                  <a class='nav-link' id='existing' href='existing-students.html'>already a student</a>
+                                              </li>
+                                              <!--Info Button-->
+                                              <li class='nav-item text-center text-lg-right d-none d-sm-block'>
+                                                  <a class='nav-link' id='info' href='#address'>info</a>
+                                              </li>
+                                              <!--Info Dropdown-->
+                                              <li class='nav-item dropdown d-block d-sm-none'>
+                                                  <a class="nav-link dropdown-toggle text-center text-lg-right" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Info</a>
+                                                  <div class='dropdown-menu bg-info'>
+                                                      <a class='dropdown-item text-center' href='#testimonials'>testimonials</a>
+                                                      <a class='dropdown-item text-center' href='#schedule'>schedule</a>
+                                                      <a class='dropdown-item text-center' href='#address'>address</a>
+                                                  </div>
+                                              </ul>
+                                          </div>
+                                      </div>
+                                  </nav>
+              <!--Content-->
+              <div class='container'>
+                <div class="row">
+                  <h1>Existing Students</h1>
+                </div>
 
-      <div class='row'>
-        <h2>How to Pay?</h2>
-        <p>To pay me, click the button below to send via venmo.</p>
-        <div id="dropin-container"></div>
-        <button id="submit-button">Request payment method</button>
-      </div>
-    </div>
+                <div class='row'>
+                  <h2>How Much?</h2>
+                  <p>I charge $140 a month, or about $30 per week.</p>
+                </div>
+
+                <div class='row'>
+                  <h2>How to Pay?</h2>
+                  <p>To pay me, click the button below to send via venmo.</p>
+                  <div id="dropin-container"></div>
+                  <button id="submit-button">Request payment method</button>
+                </div>
+              </div>
+
+              <!--Footer-->
+              <footer class='panel-footer bg-dark text-light'>
+                      <div class='container'>
+                              <div class='row'>
+                                      <section id='schedule' class='col-sm-4'>
+                                            <span id='scheduleTitle'>Schedule:</span><br>
+                                                <p>lorem ipsum<p></p>
+                                                <p>lorem ipsum</p>
+                                                <p>lorem ipsum</p>
+                                                <hr class='d-block d-sm-none d-md-none d-lg-none d-xl-none'>
+                                      </section>
+                                      <section id='address' class='col-sm-4'>
+                                                <span id='addressTitle'>Address:</span><br>
+                                                <p>3310 Aaron Sosebee Rd.<br>
+                                                Cumming, GA</p>
+                                                <hr class='d-block d-sm-none d-md-none d-lg-none d-xl-none'>
+                                      </section>
+                                      <section id='testimonials' class='col-sm-4'>
+                                                <span id='testimonialsTitle'>Testimonials:</span><br>
+                                                <p>"Mrs. Sandra has been my piano teacher for over 9 months, and during all the lessons I’ve had with her I learn something new. When it gets harder she’ll walk the student through it using different examples of teaching students diligently and exceptionally. Mrs. Sandra is enjoyable to be around with her bright  personality, and being taught by her is far from boring. All in all, Mrs. Sandra is a wonderful piano teacher."</p>
+                                                <p>"lorem ipsum</p>
+                                                <p>"lorem ipsum"</p>
+                                      </section>
+                                    </div>
+                                  </div>
+                                </footer>
   </body>
 </html>
