@@ -225,6 +225,7 @@ function ninthQ() {
     alert("Correct!");
     firstPlayerPoints += 1;
     passPlayer();
+    tenthQ();
   } else {
     alert("Incorrect.");
     firstPlayerPoints -= 1;
