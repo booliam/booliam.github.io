@@ -166,7 +166,11 @@ function sixthQ() {
     secondPlayerPoints += 1;
     passPlayer();
     seventhQ();
-  } else {
+  } else if (sixthQanswer == "COASTAL PLAIN") {
+    alert("Correct!");
+    secondPlayerPoints += 1;
+    passPlayer();
+    seventhQ(); else {
     alert("Incorrect.");
     secondPlayerPoints -= 1;
     sixthQ();
@@ -421,6 +425,16 @@ function twentysecondQ() {
     secondPlayerPoints += 1;
     passPlayer();
     twentythirdQ();
+  } else if (twentysecondQanswer == "GREAT BRITAIN") {
+    alert("Correct!");
+    secondPlayerPoints += 1;
+    passPlayer();
+    twentythirdQ(); 
+  } else if (twentysecondQanswer == "ENGLAND") {
+    alert("Correct!");
+    secondPlayerPoints += 1;
+    passPlayer();
+    twentythirdQ(); 
   } else {
     alert("Incorrect.");
     secondPlayerPoints -= 1;
@@ -496,6 +510,11 @@ function twentyseventhQ() {
     thirdPlayerPoints += 1;
     passPlayer();
     twentyeighthQ();
+  } else if (twentyseventhQanswer == "THOMAS JEFFERSON") {
+    alert("Correct!");
+    thirdPlayerPoints += 1;
+    passPlayer();
+    twentyeighthQ();
   } else {
     alert("Incorrect.");
     thirdPlayerPoints -= 1;
@@ -551,6 +570,11 @@ function thirtiethQ() {
     passPlayer();
     thirtyfirstQ();
   } else if (thirtiethQanswer == "FOURTH") {
+    alert("Correct!");
+    secondPlayerPoints += 1;
+    passPlayer();
+    thirtyfirstQ();
+  } else if (thirtiethQanswer == "4TH") {
     alert("Correct!");
     secondPlayerPoints += 1;
     passPlayer();
@@ -702,8 +726,8 @@ function thirtyninthQ() {
 	}
 }
 
-function fortiethQ() {
-  var fortiethQanswer = prompt("Who was the President of the United States who ushered along the removal of Indians?");
+function fourtiethQ() {
+  var fourtiethQanswer = prompt("Who was the President of the United States who ushered along the removal of Indians?");
   fortiethQanswer = fortiethQanswer.toUpperCase();
   if (fourtiethQanswer == "JACKSON") {
     alert("Correct!");
