@@ -1,3 +1,4 @@
+ 
 //Log In
 function loginButton() {
   window.open('login.html', '_self')
@@ -172,7 +173,8 @@ function sixthQ() {
     alert("Correct!");
     secondPlayerPoints += 1;
     passPlayer();
-    seventhQ(); else {
+    seventhQ();
+  } else {
     alert("Incorrect.");
     secondPlayerPoints -= 1;
     sixthQ();
@@ -1197,7 +1199,5 @@ function sixtyfourthQ() {
     fourthPlayerPoints -= 1;
     sixtyfourthQ();
 	}
-}
-}
 }
 }
