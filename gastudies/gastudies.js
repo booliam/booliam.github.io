@@ -123,6 +123,7 @@ function thirdQ() {
     thirdPlayerPoints -= 1;
     thirdQ();
 	}
+}
 
 function fourthQ() {
   var fourthQanswer = prompt("Which region is known for Dalton, 'The Carpet Capital of the World?'");
@@ -142,6 +143,7 @@ function fourthQ() {
     fourthPlayerPoints -= 1;
     fourthQ();
 	}
+}
 
 function fifthQ() {
   var fifthQanswer = prompt("Which region is also known as the TAG Corner?");
