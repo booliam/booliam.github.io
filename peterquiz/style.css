@@ -1,0 +1,31 @@
+* {
+  text-align: left;
+}
+
+body {
+  position: relative;
+}
+
+#mainHeader {
+  font-size: 4em;
+}
+
+#questionBox {
+  font-size: 2.8em;
+}
+
+#subText {
+  font-size: 1.8em;
+}
+
+@keyframes running {
+  0% {right: 0px}
+  100% {left: 0px}
+}
+
+#peterImg {
+  width: 200px;
+  height: auto;
+  animation-name: running;
+  animation-duration: 4s;
+}
